@@ -1,0 +1,4 @@
+SELECT * WHERE {
+  ?s <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://omv.ontoware.org/2005/05/ontology#Ontology> .
+  ?s <http://bioportal.bioontology.org/metadata/def/isVersionOfVirtualOntology> ?codeSystem.
+  ?codeSystem <http://bioportal.bioontology.org/metadata/def/id> ?virtualId.}

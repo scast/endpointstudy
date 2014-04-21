@@ -1,0 +1,6 @@
+SELECT * WHERE {
+  ?d <http://purl.bioontology.org/ontology/RXNORM/consists_of> ?c.
+  ?c <http://purl.bioontology.org/ontology/RXNORM/has_ingredient> ?i.
+  ?i <http://bioportal.bioontology.org/ontologies/umls/cui> ?cui.
+  ?i <http://www.w3.org/2004/02/skos/core#prefLabel> ?label.
+}

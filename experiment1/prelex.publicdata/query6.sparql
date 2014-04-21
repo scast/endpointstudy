@@ -1,0 +1,7 @@
+select * where {
+?s6 <http://epo.publicdata.eu/ebd/ontology/hasApplicationStatus> ?has .
+?s6 <http://epo.publicdata.eu/ebd/ontology/hasInvolvedCountry> ?hic6 .
+?s6 <http://epo.publicdata.eu/ebd/ontology/hasPreviousChange> ?hpc6 .
+?s6 <http://epo.publicdata.eu/ebd/ontology/placeOfApplication> <http://epo.publicdata.eu/ebd/ontology/applicationPlace/14>  .
+?s6 <http://epo.publicdata.eu/ebd/ontology/publishedDate> ?pd6 .
+}

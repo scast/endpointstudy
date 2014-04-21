@@ -1,0 +1,9 @@
+select * where {
+?s1 <http://epo.publicdata.eu/ebd/ontology/epoPublicationNumber> "1101502".
+?s1 <http://epo.publicdata.eu/ebd/ontology/hasApplicationStatus> <http://epo.publicdata.eu/ebd/ontology/ApplicationStatusReplace> .
+?s1 <http://epo.publicdata.eu/ebd/ontology/hasInvolvedCountry> ?hic1 .
+?s1 <http://epo.publicdata.eu/ebd/ontology/hasPreviousChange> ?hpc1 .
+?s1 <http://epo.publicdata.eu/ebd/ontology/placeOfApplication> ?poa1 .
+?s1 <http://epo.publicdata.eu/ebd/ontology/publishedDate> ?pd1 .
+?s2 <http://epo.publicdata.eu/ebd/ontology/publishedDate> ?pd2 .
+}

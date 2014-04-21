@@ -1,0 +1,5 @@
+SELECT * WHERE { 
+    ?version <http://omv.ontoware.org/2005/05/ontology#acronym> ?acr .
+    ?version <http://omv.ontoware.org/2005/05/ontology#numberOfIndividuals> ?ind . 
+    ?version <http://omv.ontoware.org/2005/05/ontology#numberOfClasses> ?classes . 
+}

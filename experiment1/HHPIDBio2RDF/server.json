@@ -1,0 +1,9 @@
+{
+    "datasources": {
+        "endpoint": {
+            "description": "HHPIDBio2RDF",
+            "type": "SparqlDatasource",
+            "settings": ["http://HHPID.BIO2RDF.ORG/sparql", "http://HHPID.BIO2RDF.ORG/"]
+        }
+    }
+}

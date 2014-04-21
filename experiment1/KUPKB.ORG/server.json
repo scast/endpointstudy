@@ -1,0 +1,9 @@
+{
+    "datasources": {
+        "endpoint": {
+            "description": "KUPKB.org",
+            "type": "SparqlDatasource",
+            "settings": ["HTTP://SPARQL.KUPKB.ORG/SPARQL", "HTTP://SPARQL.KUPKB.ORG/"]
+        }
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "datasources": {
+        "endpoint": {
+            "description": "LOD.APC.GOV.TW",
+            "type": "SparqlDatasource",
+            "settings": ["http://lod.apc.gov.tw/sparql", "http://lod.apc.gov.tw"]
+        }
+    }
+}

@@ -1,0 +1,5 @@
+SELECT *  WHERE {
+   ?I3 <http://wifo5-04.informatik.uni-mannheim.de/drugbank/resource/drugbank/interactionDrug2> ?drug3 .
+   ?I3 <http://wifo5-04.informatik.uni-mannheim.de/drugbank/resource/drugbank/interactionDrug1> ?drug .
+   ?I4 <http://wifo5-04.informatik.uni-mannheim.de/drugbank/resource/drugbank/interactionDrug1> ?drug .
+}

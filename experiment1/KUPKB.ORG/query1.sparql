@@ -1,0 +1,5 @@
+SELECT * WHERE {      
+?genesymbol <http://www.ontotext.com/owlim/lucene#myIndex> "tgfb1" . 
+?geneid <http://bio2rdf.org/ns/bio2rdf:symbol> ?genesymbol .     
+?geneid <http://bio2rdf.org/ns/bio2rdf:xTaxonomy> ?taxon .   
+}

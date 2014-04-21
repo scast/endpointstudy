@@ -1,0 +1,8 @@
+select * where {
+?s1 <http://epo.publicdata.eu/ebd/ontology/placeOfApplication> <http://epo.publicdata.eu/ebd/ontology/applicationPlace/09> .
+?s1 <http://epo.publicdata.eu/ebd/ontology/publishedDate> ?pd1 .
+?s2 <http://epo.publicdata.eu/ebd/ontology/placeOfApplication>  <http://epo.publicdata.eu/ebd/ontology/applicationPlace/10> .
+?s2 <http://epo.publicdata.eu/ebd/ontology/publishedDate> ?pd2 .
+?s3 <http://epo.publicdata.eu/ebd/ontology/placeOfApplication> <http://epo.publicdata.eu/ebd/ontology/applicationPlace/11> .
+?s3 <http://epo.publicdata.eu/ebd/ontology/publishedDate> ?pd3 .
+}

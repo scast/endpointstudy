@@ -1,0 +1,9 @@
+{
+    "datasources": {
+        "endpoint": {
+            "description": "UNODC",
+            "type": "SparqlDatasource",
+            "settings": ["http://unodc.publicdata.eu/sparql", "http://unodc.publicdata.eu/"]
+        }
+    }
+}

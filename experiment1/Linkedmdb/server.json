@@ -1,0 +1,9 @@
+{
+    "datasources": {
+        "endpoint": {
+            "description": "LinkedMDB",
+            "type": "SparqlDatasource",
+            "settings": ["http://www.linkedmdb.org/sparql", "http://www.linkedmdb.org/"]
+        }
+    }
+}

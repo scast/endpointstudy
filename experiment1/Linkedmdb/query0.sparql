@@ -1,0 +1,7 @@
+SELECT * WHERE {
+?m1 <http://data.linkedmdb.org/resource/movie/genre> ?o1.
+?o1 <http://data.linkedmdb.org/resource/movie/film_genre_name> "Cult".
+?m2 <http://data.linkedmdb.org/resource/movie/rating> <http://data.linkedmdb.org/resource/content_rating/11>.
+?m1 <http://data.linkedmdb.org/resource/movie/producer> ?p.
+?m2 <http://data.linkedmdb.org/resource/movie/producer> ?p.
+}

@@ -1,0 +1,9 @@
+{
+    "datasources": {
+        "endpoint": {
+            "description": "PubMED",
+            "type": "SparqlDatasource",
+            "settings": ["http://pubmed.bio2rdf.org/sparql", "http://pubmed.bio2rdf.org/"]
+        }
+    }
+}

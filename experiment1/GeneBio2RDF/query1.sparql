@@ -1,0 +1,6 @@
+select * where {
+?s1 <http://bio2rdf.org/geneid_vocabulary:has_nomenclature_authority> 'CG14798'.
+?s1 <http://bio2rdf.org/geneid_vocabulary:has_locus_tag> ?lt.
+?s2 <http://bio2rdf.org/geneid_vocabulary:has_locus_tag> ?lt.
+?s3 <http://bio2rdf.org/geneid_vocabulary:has_locus_tag> ?lt.
+}

@@ -1,0 +1,8 @@
+SELECT * WHERE {   
+?geneid1 <http://bio2rdf.org/ns/bio2rdf:symbol> ?genesymbol .     
+?geneid1 <http://bio2rdf.org/ns/bio2rdf:xTaxonomy> <http://bio2rdf.org/taxon:10090> . 
+?geneid2 <http://bio2rdf.org/ns/bio2rdf:symbol> ?genesymbol .    
+?geneid2 <http://bio2rdf.org/ns/bio2rdf:xTaxonomy> <http://bio2rdf.org/taxon:10116> . 
+?geneid3 <http://bio2rdf.org/ns/bio2rdf:symbol> ?genesymbol .    
+?geneid3 <http://bio2rdf.org/ns/bio2rdf:xTaxonomy> <http://bio2rdf.org/taxon:9615> .
+}

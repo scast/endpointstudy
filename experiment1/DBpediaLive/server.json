@@ -1,0 +1,9 @@
+{
+    "datasources": {
+        "endpoint": {
+            "description": "DBPEDIA LIVE",
+            "type": "SparqlDatasource",
+            "settings": ["http://dbpedia-live.openlinksw.com/sparql", "http://live.dbpedia.org/"]
+        }
+    }
+}

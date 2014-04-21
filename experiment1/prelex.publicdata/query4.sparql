@@ -1,0 +1,5 @@
+select * where {
+?s3 <http://epo.publicdata.eu/ebd/ontology/epoPublicationNumber> "1020899".
+?s3 <http://epo.publicdata.eu/ebd/ontology/hasApplicationStatus> ?t3.
+?s3 <http://epo.publicdata.eu/ebd/ontology/hasInvolvedCountry> ?hic3 .
+}

@@ -1,0 +1,7 @@
+SELECT * WHERE {
+?drug1 <http://wifo5-04.informatik.uni-mannheim.de/drugbank/resource/drugbank/drugCategory> <http://wifo5-04.informatik.uni-mannheim.de/drugbank/resource/drugcategory/fertilityAgents> .
+?drug1 <http://wifo5-04.informatik.uni-mannheim.de/drugbank/resource/drugbank/affectedOrganism> ?o.
+?o <http://wifo5-04.informatik.uni-mannheim.de/drugbank/resource/drugbank/genbankIdGene> ?g1.
+?o <http://wifo5-04.informatik.uni-mannheim.de/drugbank/resource/drugbank/locus> ?l1.
+?o <http://wifo5-04.informatik.uni-mannheim.de/drugbank/resource/drugbank/molecularWeight> ?mw1.
+}

@@ -1,0 +1,3 @@
+SELECT * WHERE {
+  <http://bioportal.bioontology.org/ontologies/47087> ?property ?hasValue .}
+  ?hasValue ?property2 ?hasValue2 . }

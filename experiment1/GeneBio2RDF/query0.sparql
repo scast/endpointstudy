@@ -1,0 +1,9 @@
+select * where {
+?s1 <http://bio2rdf.org/geneid_vocabulary:has_taxid> ?o.
+?s1 <http://bio2rdf.org/geneid_vocabulary:has_nomenclature_status> ?st1.
+?s1 <http://bio2rdf.org/geneid_vocabulary:has_nomenclature_authority> 'CG14798'.
+?s2 <http://bio2rdf.org/geneid_vocabulary:has_taxid> ?o.
+?s2 <http://bio2rdf.org/geneid_vocabulary:has_map_location> ?l2.
+?s2 <http://bio2rdf.org/geneid_vocabulary:has_nomenclature_status> ?st2.
+?s2 <http://bio2rdf.org/geneid_vocabulary:has_nomenclature_authority> 'b6'.
+}

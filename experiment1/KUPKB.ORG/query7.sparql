@@ -1,0 +1,7 @@
+SELECT * WHERE {      
+?analysis <http://www.kupkb.org/data/kupkb/produces> ?compoundList .   
+?analysis <http://www.kupkb.org/data/kupkb/annotatedWith> ?annotation .   
+?analysis <http://www.kupkb.org/data/kupkb/analysisOf>  ?experiment  .  
+?annotation <http://www.kupkb.org/data/kupkb/hasAnnotationRole> <http://www.kupkb.org/data/kupo/KUPO_0300008> . 
+?annotation <http://www.kupkb.org/data/kupkb/bioMaterial> ?analyteBioMaterial . 
+}

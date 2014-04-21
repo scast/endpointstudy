@@ -1,0 +1,9 @@
+{
+    "datasources": {
+        "endpoint": {
+            "description": "ID.SGCB.MCU.ES",
+            "type": "SparqlDatasource",
+            "settings": ["http://id.sgcb.mcu.es/sparql", "http://id.sgcb.mcu.es/"]
+        }
+    }
+}

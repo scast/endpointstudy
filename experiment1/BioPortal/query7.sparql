@@ -1,0 +1,6 @@
+SELECT * WHERE { 
+  ?i <http://bioportal.bioontology.org/ontologies/umls/cui> ?cui.
+  ?i <http://www.w3.org/2004/02/skos/core#prefLabel> ?label.
+  ?ndfrtdrug <http://bioportal.bioontology.org/ontologies/umls/cui> ?cui.
+  ?ndfrtdrug <http://purl.bioontology.org/ontology/NDFRT/has_mechanism_of_action> <http://purl.bioontology.org/ontology/NDFRT/N0000000121>.
+}

@@ -1,0 +1,7 @@
+SELECT * WHERE { 
+?geneid1 <http://bio2rdf.org/ns/bio2rdf:xTaxonomy> ?t.
+?geneid1 <http://www.w3.org/2004/02/skos/core#notation>	"104073" .    
+?geneid2 <http://bio2rdf.org/ns/bio2rdf:xTaxonomy> ?t .
+?geneid2  <http://www.w3.org/2004/02/skos/core#notation> "100008564" .   
+?geneid3 <http://bio2rdf.org/ns/bio2rdf:xTaxonomy> ?t .
+}

@@ -1,0 +1,5 @@
+select * where {
+?s1 <http://bio2rdf.org/geneid_vocabulary:has_taxid> ?o.
+?s1 <http://bio2rdf.org/geneid_vocabulary:has_genomic_nucleotide_gi> <http://bio2rdf.org/gi:116010291> .
+?s2 <http://bio2rdf.org/geneid_vocabulary:has_taxid> ?o.}
+

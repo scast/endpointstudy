@@ -1,0 +1,6 @@
+select * where {
+?s1 <http://bio2rdf.org/geneid_vocabulary:has_locus_tag> 'BUAPTUC7_531'.
+?s2 <http://bio2rdf.org/geneid_vocabulary:has_locus_tag> 'BUAPTUC7_535'.
+?s1 <http://bio2rdf.org/geneid_vocabulary:has_pubmed_id> ?pubmed.
+?s2 <http://bio2rdf.org/geneid_vocabulary:has_pubmed_id> ?pubmed.
+}

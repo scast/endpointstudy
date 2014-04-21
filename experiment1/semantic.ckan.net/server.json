@@ -1,0 +1,9 @@
+{
+    "datasources": {
+        "endpoint": {
+            "description": "Semantic CKAN",
+            "type": "SparqlDatasource",
+            "settings": ["http://semantic.ckan.net/sparql/", "http://semantic.ckan.net/"]
+        }
+    }
+}

@@ -1,0 +1,4 @@
+@prefix fluid: <http://fluidops.org/config#>.
+
+<http://DrugBank> fluid:store "SPARQLEndpoint";
+fluid:SPARQLEndpoint "http://wifo5-03.informatik.uni-mannheim.de/drugbank/sparql".

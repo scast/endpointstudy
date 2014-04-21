@@ -1,0 +1,8 @@
+SELECT * WHERE {
+?t1 <http://data.linkedmdb.org/resource/movie/production_company> ?m1.
+?t1 <http://data.linkedmdb.org/resource/movie/genre> ?o1.
+?t1 <http://data.linkedmdb.org/resource/movie/actor> ?a.
+?t2 <http://data.linkedmdb.org/resource/movie/genre> ?o2.
+?t2 <http://data.linkedmdb.org/resource/movie/actor> ?a.
+}
+

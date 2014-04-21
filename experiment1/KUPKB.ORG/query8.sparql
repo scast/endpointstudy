@@ -1,0 +1,9 @@
+SELECT * WHERE {  
+?geneid10 <http://bio2rdf.org/ns/bio2rdf:xTaxonomy> ?t . 
+?geneid10 <http://bio2rdf.org/ns/bio2rdf:symbol> ?s10 .    
+?geneid10 <http://www.e-lico.eu/data/kupkb/hasHomolog> <http://bio2rdf.org/geneid:100125288> .
+?geneid11 <http://bio2rdf.org/ns/bio2rdf:xTaxonomy> ?t . 
+?geneid11 <http://www.e-lico.eu/data/kupkb/hasHomolog> <http://bio2rdf.org/geneid:286983> .
+?geneid12 <http://bio2rdf.org/ns/bio2rdf:xTaxonomy> ?t .
+?geneid12 <http://bio2rdf.org/ns/uniprot:xProtein> <http://purl.uniprot.org/uniprot/D3Z4R7> .
+}

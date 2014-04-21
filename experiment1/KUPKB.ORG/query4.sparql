@@ -1,0 +1,6 @@
+SELECT * WHERE {   
+?geneid7 <http://bio2rdf.org/ns/bio2rdf:symbol> ?genesymbol .    
+?geneid7 <http://bio2rdf.org/ns/uniprot:xProtein> <http://purl.uniprot.org/uniprot/P0CL81> .
+?geneid8 <http://bio2rdf.org/ns/bio2rdf:symbol> ?genesymbol .     
+?geneid8 <http://bio2rdf.org/ns/uniprot:xProtein> <http://purl.uniprot.org/uniprot/P0CL82> .
+}

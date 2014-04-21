@@ -1,0 +1,10 @@
+SELECT * WHERE {
+   ?drug1 <http://wifo5-04.informatik.uni-mannheim.de/drugbank/resource/drugbank/drugCategory> <http://wifo5-04.informatik.uni-mannheim.de/drugbank/resource/drugcategory/antibiotics> .
+   ?drug2 <http://wifo5-04.informatik.uni-mannheim.de/drugbank/resource/drugbank/drugCategory> <http://wifo5-04.informatik.uni-mannheim.de/drugbank/resource/drugcategory/antiviralAgents> .
+   ?drug3 <http://wifo5-04.informatik.uni-mannheim.de/drugbank/resource/drugbank/drugCategory> <http://wifo5-04.informatik.uni-mannheim.de/drugbank/resource/drugcategory/antihypertensiveAgents> .
+   ?drug1 <http://wifo5-04.informatik.uni-mannheim.de/drugbank/resource/drugbank/target> ?o1.
+   ?drug2 <http://wifo5-04.informatik.uni-mannheim.de/drugbank/resource/drugbank/target> ?o2.
+   ?drug3 <http://wifo5-04.informatik.uni-mannheim.de/drugbank/resource/drugbank/target> ?o3.
+   ?drug1 <http://wifo5-04.informatik.uni-mannheim.de/drugbank/resource/drugbank/affectedOrganism> ?x1.
+   ?drug2 <http://wifo5-04.informatik.uni-mannheim.de/drugbank/resource/drugbank/affectedOrganism> ?x2.
+}

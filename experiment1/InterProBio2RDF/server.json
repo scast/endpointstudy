@@ -1,0 +1,9 @@
+{
+    "datasources": {
+        "endpoint": {
+            "description": "InterProBio2RDF",
+            "type": "SparqlDatasource",
+            "settings": ["http://interpro.bio2rdf.org/sparql", "http://interpro.bio2rdf.org/"]
+        }
+    }
+}

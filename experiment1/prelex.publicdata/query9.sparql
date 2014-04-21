@@ -1,0 +1,7 @@
+select * where {
+?s1 <http://epo.publicdata.eu/ebd/ontology/placeOfApplication> ?pa .
+?s1 <http://epo.publicdata.eu/ebd/ontology/publishedDate> ?pd1 .
+?s1 <http://epo.publicdata.eu/ebd/ontology/hasInvolvedCountry> <http://epo.publicdata.eu/ebd/ontology/country/AT> .
+?s2 <http://epo.publicdata.eu/ebd/ontology/placeOfApplication>  ?pa .
+?s2 <http://epo.publicdata.eu/ebd/ontology/publishedDate> ?pd2 .
+}

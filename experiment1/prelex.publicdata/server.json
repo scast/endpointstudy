@@ -1,0 +1,9 @@
+{
+    "datasources": {
+        "endpoint": {
+            "description": "Prelex.Publicdata",
+            "type": "SparqlDatasource",
+            "settings": ["http://prelex.publicdata.eu/sparql", "http://prelex.publicdata.eu/"]
+        }
+    }
+}

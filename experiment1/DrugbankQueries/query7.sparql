@@ -1,0 +1,6 @@
+SELECT * WHERE {
+  ?o <http://wifo5-04.informatik.uni-mannheim.de/drugbank/resource/drugbank/genbankIdGene> ?g.
+  ?o <http://wifo5-04.informatik.uni-mannheim.de/drugbank/resource/drugbank/locus> ?l.
+  ?o <http://wifo5-04.informatik.uni-mannheim.de/drugbank/resource/drugbank/molecularWeight> ?mw.
+  ?drug <http://wifo5-04.informatik.uni-mannheim.de/drugbank/resource/drugbank/target> ?o.
+}

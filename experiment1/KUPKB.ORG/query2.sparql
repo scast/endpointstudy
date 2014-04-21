@@ -1,0 +1,9 @@
+SELECT * WHERE {      
+<http://www.ebi.ac.uk/efo/EFO_0000097> <http://www.ebi.ac.uk/efo/definition_citation> ?c1 .
+?s1 <http://www.ebi.ac.uk/efo/definition_citation> ?c1 .
+?s1 <http://www.ebi.ac.uk/efo/organizational_class> ?t1 .
+?s1  <http://www.ebi.ac.uk/efo/alternative_term> ?at1 .
+?s1 <http://www.ebi.ac.uk/efo/bioportal_provenance> ?bp1 .
+}
+
+

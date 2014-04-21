@@ -1,0 +1,4 @@
+@prefix fluid: <http://fluidops.org/config#>.
+
+<http://Linkedmdb> fluid:store "SPARQLEndpoint";
+fluid:SPARQLEndpoint "http://www.linkedmdb.org/sparql".

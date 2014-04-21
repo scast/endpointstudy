@@ -1,0 +1,9 @@
+{
+    "datasources": {
+        "endpoint": {
+            "description": "DBPEDIA",
+            "type": "SparqlDatasource",
+            "settings": ["http://dbpedia.org/sparql", "http://dbpedia.org"]
+        }
+    }
+}

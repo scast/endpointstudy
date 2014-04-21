@@ -1,0 +1,8 @@
+SELECT * WHERE {
+   ?drug1 <http://wifo5-04.informatik.uni-mannheim.de/drugbank/resource/drugbank/possibleDiseaseTarget> <http://wifo5-04.informatik.uni-mannheim.de/diseasome/resource/diseases/261> .
+   ?drug1 <http://wifo5-04.informatik.uni-mannheim.de/drugbank/resource/drugbank/target> ?o.
+   ?o <http://wifo5-04.informatik.uni-mannheim.de/drugbank/resource/drugbank/genbankIdGene> ?g.
+   ?o <http://wifo5-04.informatik.uni-mannheim.de/drugbank/resource/drugbank/locus> ?l.
+   ?o <http://wifo5-04.informatik.uni-mannheim.de/drugbank/resource/drugbank/molecularWeight> ?mw.
+   ?o <http://wifo5-04.informatik.uni-mannheim.de/drugbank/resource/drugbank/hprdId> ?hp.
+}

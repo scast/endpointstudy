@@ -1,0 +1,9 @@
+{
+    "datasources": {
+        "endpoint": {
+            "description": "DrugBank Bio2RDF",
+            "type": "SparqlDatasource",
+            "settings": ["http://drugbank.bio2rdf.org/sparql", "http://drugbank.bio2rdf.org/"]
+        }
+    }
+}

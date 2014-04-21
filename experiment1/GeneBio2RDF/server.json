@@ -1,0 +1,9 @@
+{
+    "datasources": {
+        "endpoint": {
+            "description": "GeneBio2RDF",
+            "type": "SparqlDatasource",
+            "settings": ["http://GENE.BIO2RDF.ORG/sparql", "http://GENE.BIO2RDF.ORG"]
+        }
+    }
+}

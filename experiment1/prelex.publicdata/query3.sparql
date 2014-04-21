@@ -1,0 +1,6 @@
+select * where {
+?s4 <http://epo.publicdata.eu/ebd/ontology/bulletinCountry> ?bc.
+?s4 <http://epo.publicdata.eu/ebd/ontology/bulletinFile> ?bf4 .
+?s4 <http://epo.publicdata.eu/ebd/ontology/epoPublicationNumber> "1041130".
+?s5 <http://epo.publicdata.eu/ebd/ontology/bulletinCountry> ?bc.
+}

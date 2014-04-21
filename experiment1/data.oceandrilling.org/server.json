@@ -1,0 +1,9 @@
+{
+    "datasources": {
+        "endpoint": {
+            "description": "OceanDrilling",
+            "type": "SparqlDatasource",
+            "settings": ["http://data.oceandrilling.org/sparql", "http://data.oceandrilling.org/"]
+        }
+    }
+}

@@ -1,0 +1,8 @@
+select * where {
+?s1 <http://bio2rdf.org/geneid_vocabulary:has_locus_tag> 'BUAPTUC7_531'.
+?s1 <http://bio2rdf.org/geneid_vocabulary:has_taxid> ?t1.
+?s1 <http://bio2rdf.org/geneid_vocabulary:has_protein_accession> ?l1.
+?s2 <http://bio2rdf.org/geneid_vocabulary:has_locus_tag> 'BUAPTUC7_535'.
+?s2 <http://bio2rdf.org/geneid_vocabulary:has_taxid> ?t2.
+?s2 <http://bio2rdf.org/geneid_vocabulary:has_protein_accession> ?l2.
+}

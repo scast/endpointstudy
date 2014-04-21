@@ -1,0 +1,8 @@
+select * where {
+?s4 <http://bio2rdf.org/geneid_vocabulary:has_locus_tag> 'BUAPTUC7_570'.
+?s4 <http://bio2rdf.org/geneid_vocabulary:has_taxid> ?t4.
+?s4 <http://bio2rdf.org/geneid_vocabulary:has_protein_accession> ?na4.
+?s4 <http://bio2rdf.org/geneid_vocabulary:has_genomic_nucleotide_gi> ?l4.
+?s4 <http://bio2rdf.org/geneid_vocabulary:has_genomic_nucleotide_accession> ?st4.
+?s4 <http://bio2rdf.org/geneid_vocabulary:has_pubmed_id> ?pubmed.
+}

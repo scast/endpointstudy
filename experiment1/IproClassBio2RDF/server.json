@@ -1,0 +1,9 @@
+{
+    "datasources": {
+        "endpoint": {
+            "description": "IproClassBio2RDF",
+            "type": "SparqlDatasource",
+            "settings": ["http://iproclass.bio2rdf.org/sparql", "http://iproclass.bio2rdf.org/sparql"]
+        }
+    }
+}

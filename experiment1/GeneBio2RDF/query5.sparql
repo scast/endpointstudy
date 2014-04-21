@@ -1,0 +1,6 @@
+select * where {
+?s1 <http://bio2rdf.org/geneid_vocabulary:has_locus_tag> ?lt1.
+?s1 <http://bio2rdf.org/geneid_vocabulary:has_taxid> ?o.
+?s1 <http://bio2rdf.org/geneid_vocabulary:has_protein_accession> <http://bio2rdf.org/genbank:NP_001245468.1> .
+?s1 <http://bio2rdf.org/geneid_vocabulary:has_map_location> ?l1.
+?s1 <http://bio2rdf.org/geneid_vocabulary:has_nomenclature_status> ?st1.}

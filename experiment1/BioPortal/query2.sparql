@@ -1,0 +1,7 @@
+SELECT * WHERE {
+  ?s <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://omv.ontoware.org/2005/05/ontology#Ontology> .
+  ?s <http://omv.ontoware.org/2005/05/ontology#acronym> ?acronym.
+  ?s <http://omv.ontoware.org/2005/05/ontology#name> ?formalName.
+  ?s <http://bioportal.bioontology.org/metadata/def/id> ?id.
+}
+

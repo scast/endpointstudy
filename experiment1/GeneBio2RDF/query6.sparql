@@ -1,0 +1,8 @@
+select * where {
+?s1 <http://bio2rdf.org/geneid_vocabulary:has_taxid> ?o.
+?s6 <http://bio2rdf.org/geneid_vocabulary:has_taxid> ?o.
+?s6 <http://bio2rdf.org/geneid_vocabulary:has_protein_accession> <http://bio2rdf.org/genbank:CAQ53611.1> .
+?s6 <http://bio2rdf.org/geneid_vocabulary:has_nomenclature_authority> ?na6.
+?s6 <http://bio2rdf.org/geneid_vocabulary:has_map_location> ?l6.
+}
+
