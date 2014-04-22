@@ -1,10 +1,9 @@
 #!/bin/bash
 ROOT=`pwd`
-QUERY_ROOT=$ROOT/experiment1
+QUERY_ROOT=$ROOT/$1
 EXPERIMENTS_ROOT=$ROOT/results
 RESULTS_FILE=$EXPERIMENTS_ROOT/direct-results-$(date +"%Y%m%d-%H:%M:%S")
 ERRORS_FILE=$EXPERIMENTS_ROOT/direct-errors-$(date +"%Y%m%d-%H:%M:%S")
-#ARQ_ROOT=/home/anapsid/apache-jena-2.11.0
 CMD_FILE=$ROOT/bin/runDirect.py
 echo $RESULTS_FILE;
 

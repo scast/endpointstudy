@@ -1,6 +1,6 @@
 #!/bin/bash
 ROOT=`pwd`
-QUERY_ROOT=$ROOT/experiment1
+QUERY_ROOT=$ROOT/$1
 EXPERIMENTS_ROOT=$ROOT/results
 RESULTS_FILE=$EXPERIMENTS_ROOT/fedx-results-$(date +"%Y%m%d-%H:%M:%S")
 ERRORS_FILE=$EXPERIMENTS_ROOT/fedx-errors-$(date +"%Y%m%d-%H:%M:%S")
