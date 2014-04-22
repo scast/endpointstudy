@@ -1,5 +1,5 @@
 #!/bin/bash
-ROOT=/home/anapsid/iswc2014
+ROOT=`pwd`
 QUERY_ROOT=$ROOT/experiment1
 EXPERIMENTS_ROOT=$ROOT/results
 RESULTS_FILE=$EXPERIMENTS_ROOT/anapsid-results-$(date +"%Y%m%d-%k:%M:%S")
