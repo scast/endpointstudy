@@ -1,0 +1,4 @@
+@prefix fluid: <http://fluidops.org/config#>.
+
+<http://Iproclass> fluid:store "SPARQLEndpoint";
+fluid:SPARQLEndpoint "http://iproclass.bio2rdf.org/sparql".

@@ -1,0 +1,4 @@
+@prefix fluid: <http://fluidops.org/config#>.
+
+<http://BioPortal> fluid:store "SPARQLEndpoint";
+fluid:SPARQLEndpoint "http://sparql.bioontology.org/sparql".

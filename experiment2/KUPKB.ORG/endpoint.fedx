@@ -1,0 +1,4 @@
+@prefix fluid: <http://fluidops.org/config#>.
+
+<http://KUPKB> fluid:store "SPARQLEndpoint";
+fluid:SPARQLEndpoint "HTTP://SPARQL.KUPKB.ORG/SPARQL".
