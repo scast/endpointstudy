@@ -1,0 +1,12 @@
+SELECT ?s ?acronym ?formalName ?description ?codeSystem ?virtualId ?acronym ?id
+WHERE {
+  ?s <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://omv.ontoware.org/2005/05/ontology#Ontology> .
+  ?s <http://omv.ontoware.org/2005/05/ontology#acronym> ?acronym.
+  ?s <http://omv.ontoware.org/2005/05/ontology#name> ?formalName.
+  ?s <http://bioportal.bioontology.org/metadata/def/id> ?id.
+  ?s <http://omv.ontoware.org/2005/05/ontology#description> ?description.
+  ?s <http://bioportal.bioontology.org/metadata/def/isVersionOfVirtualOntology> ?codeSystem.
+  ?codeSystem <http://bioportal.bioontology.org/metadata/def/id> ?virtualId
+}
+ LIMIT 11  
+ OFFSET 0

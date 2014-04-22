@@ -1,0 +1,18 @@
+SELECT ?o WHERE {
+?drug1 <http://wifo5-04.informatik.uni-mannheim.de/drugbank/resource/drugbank/drugCategory> ?t1.
+?drug1 <http://wifo5-04.informatik.uni-mannheim.de/drugbank/resource/drugbank/target> ?o.
+?drug2 <http://wifo5-04.informatik.uni-mannheim.de/drugbank/resource/drugbank/target> ?o.
+?drug2 <http://wifo5-04.informatik.uni-mannheim.de/drugbank/resource/drugbank/drugCategory> ?t2.
+?drug1 <http://wifo5-04.informatik.uni-mannheim.de/drugbank/resource/drugbank/synonym> ?drug2.
+?o <http://wifo5-04.informatik.uni-mannheim.de/drugbank/resource/drugbank/genbankIdGene> ?g1.
+?o <http://wifo5-04.informatik.uni-mannheim.de/drugbank/resource/drugbank/locus> ?l1.
+OPTIONAL {?drug1 <http://wifo5-04.informatik.uni-mannheim.de/drugbank/resource/drugbank/meltingPoint> ?p1.
+          ?drug1 <http://wifo5-04.informatik.uni-mannheim.de/drugbank/resource/drugbank/possibleDiseaseTarget> ?disease1}.
+OPTIONAL {?drug2 <http://wifo5-04.informatik.uni-mannheim.de/drugbank/resource/drugbank/meltingPoint> ?p2.
+          ?drug2 <http://wifo5-04.informatik.uni-mannheim.de/drugbank/resource/drugbank/possibleDiseaseTarget> ?disease2
+}
+FILTER (?drug1 != ?drug2)
+FILTER (?t1=<http://wifo5-04.informatik.uni-mannheim.de/drugbank/resource/drugcategory/antineoplasticAgents,Hormonal> )
+FILTER (?t2=<http://wifo5-04.informatik.uni-mannheim.de/drugbank/resource/drugcategory/hormoneAntagonists>)
+}
+ORDER BY ?o

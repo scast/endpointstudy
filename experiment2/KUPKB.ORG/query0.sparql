@@ -1,0 +1,22 @@
+SELECT ?genesymbol ?expression ?sample ?factor ?species ?experiment  
+WHERE {      
+?genesymbol <http://www.ontotext.com/owlim/lucene#myIndex>  ?t1. 
+?geneid <http://bio2rdf.org/ns/bio2rdf:symbol> ?genesymbol .     
+?geneid <http://bio2rdf.org/ns/bio2rdf:xTaxonomy> ?taxon .   
+?taxon <http://www.w3.org/2000/01/rdf-schema#label> ?species .    
+?listmember <http://www.kupkb.org/data/kupkb/hasDatabaseRef> ?geneid .
+?geneid <http://bio2rdf.org/ns/uniprot:xProtein> ?uniprot .     
+?listmember <http://www.kupkb.org/data/kupkb/hasExpression> ?expressionURI .  
+?expressionURI <http://www.w3.org/2000/01/rdf-schema#label> ?expression .   
+?compoundList <http://www.kupkb.org/data/kupkb/hasMember> ?listmember .    
+?analysis <http://www.kupkb.org/data/kupkb/produces> ?compoundList .   
+?analysis <http://www.kupkb.org/data/kupkb/annotatedWith> ?annotation .   
+?analysis <http://www.kupkb.org/data/kupkb/analysisOf>  ?experiment  .  
+?annotation <http://www.kupkb.org/data/kupkb/hasAnnotationRole> ?h1. 
+?annotation <http://www.kupkb.org/data/kupkb/bioMaterial> ?analyteBioMaterial . 
+?analyteBioMaterial <http://www.w3.org/2000/01/rdf-schema#label> ?sample . 
+OPTIONAL { ?annotation <http://www.kupkb.org/data/kupkb/hasDisease> ?analyteDiseaseURI . 
+      ?analyteDiseaseURI <http://www.w3.org/2000/01/rdf-schema#label> ?factor } 
+FILTER (?t1="tgfb1")
+FILTER (?h1=<http://www.kupkb.org/data/kupo/KUPO_0300008> )
+}

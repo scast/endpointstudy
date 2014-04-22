@@ -1,0 +1,10 @@
+SELECT DISTINCT ?drug1 ?drug2 ?o WHERE {
+?drug1 <http://wifo5-04.informatik.uni-mannheim.de/drugbank/resource/drugbank/drugCategory> <http://wifo5-04.informatik.uni-mannheim.de/drugbank/resource/drugcategory/fertilityAgents> .
+?drug1 <http://wifo5-04.informatik.uni-mannheim.de/drugbank/resource/drugbank/target> ?o.
+?drug2 <http://wifo5-04.informatik.uni-mannheim.de/drugbank/resource/drugbank/target> ?o.
+?drug2 <http://wifo5-04.informatik.uni-mannheim.de/drugbank/resource/drugbank/drugCategory> <http://wifo5-04.informatik.uni-mannheim.de/drugbank/resource/drugcategory/hormoneAntagonists> .
+?o <http://wifo5-04.informatik.uni-mannheim.de/drugbank/resource/drugbank/genbankIdGene> ?g1.
+?o <http://wifo5-04.informatik.uni-mannheim.de/drugbank/resource/drugbank/locus> ?l1.
+FILTER (?drug1 != ?drug2)
+}
+ORDER BY ?o

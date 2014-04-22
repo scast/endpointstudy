@@ -1,0 +1,5 @@
+SELECT DISTINCT ?vrtID ?graph
+WHERE { 
+    ?vrtID <http://bioportal.bioontology.org/metadata/def/hasVersion> ?version .
+    ?version <http://bioportal.bioontology.org/metadata/def/hasDataGraph> ?graph .
+}

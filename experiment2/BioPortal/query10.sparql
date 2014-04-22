@@ -1,0 +1,10 @@
+SELECT distinct ?d ?label 
+        WHERE { 
+          FILTER (?d = <http://purl.bioontology.org/ontology/RXNORM/213169> || ?d = <http://purl.bioontology.org/ontology/RXNORM/213169> || ?d = <http://purl.bioontology.org/ontology/RXNORM/313850> || ?d = <http://purl.bioontology.org/ontology/RXNORM/309356> || ?d = <http://purl.bioontology.org/ontology/RXNORM/309356> || ?d = <http://purl.bioontology.org/ontology/RXNORM/309357> || ?d = <http://purl.bioontology.org/ontology/RXNORM/309357> || ?d = <http://purl.bioontology.org/ontology/RXNORM/197351> || ?d = <http://purl.bioontology.org/ontology/RXNORM/244564> || ?d = <http://purl.bioontology.org/ontology/RXNORM/197316> || ?d = <http://purl.bioontology.org/ontology/RXNORM/311354>)
+          ?d <http://purl.bioontology.org/ontology/RXNORM/consists_of> ?c.
+          ?c <http://purl.bioontology.org/ontology/RXNORM/has_ingredient> ?i.
+          ?i <http://bioportal.bioontology.org/ontologies/umls/cuiY> ?cui.
+          ?i <http://www.w3.org/2004/02/skos/core#prefLabel> ?label.
+          ?ndfrtdrug <http://bioportal.bioontology.org/ontologies/umls/cui> ?cui.
+          ?ndfrtdrug <http://purl.bioontology.org/ontology/NDFRT/has_mechanism_of_action> <http://purl.bioontology.org/ontology/NDFRT/N0000000121>.
+        }

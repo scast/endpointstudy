@@ -1,0 +1,8 @@
+SELECT DISTINCT ?hasValue WHERE {
+  { <http://purl.bioontology.org/ontology/ICD9CM/714.0> ?property ?hasValue }
+
+UNION {
+   ?s <http://www.w3.org/2004/02/skos/core#notation> "714.0" .
+   ?s <http://www.w3.org/2004/02/skos/core#prefLabel> ?hasValue .}
+}
+LIMIT 10

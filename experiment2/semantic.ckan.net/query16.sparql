@@ -1,0 +1,34 @@
+select ?d where {
+{
+?s1 <http://www.w3.org/ns/dcat#keyword> "no-vocab-mappings" .
+?s2 <http://www.w3.org/ns/dcat#keyword> "lod" .
+?s1 <http://www.w3.org/ns/dcat#distribution> ?d .
+?s2 <http://www.w3.org/ns/dcat#distribution> ?d .
+FILTER (?s1!=?s2)
+}
+UNION
+{
+?s3 <http://www.w3.org/ns/dcat#keyword> "provenance-metadata" .
+?s4 <http://www.w3.org/ns/dcat#keyword> "schemata" .
+?s3 <http://www.w3.org/ns/dcat#distribution> ?d .
+?s4 <http://www.w3.org/ns/dcat#distribution> ?d .
+FILTER (?s3!=?s4)
+}
+UNION
+{
+?s5 <http://www.w3.org/ns/dcat#keyword> "format-foaf" .
+?s6 <http://www.w3.org/ns/dcat#keyword> "format-sioc" .
+?s5 <http://www.w3.org/ns/dcat#distribution> ?d .
+?s6 <http://www.w3.org/ns/dcat#distribution> ?d .
+FILTER (?s5!=?s6)
+}
+UNION
+{
+?s7 <http://www.w3.org/ns/dcat#keyword> "format-rdfg" .
+?s7 <http://www.w3.org/ns/dcat#distribution> ?d .
+?s8 <http://www.w3.org/ns/dcat#keyword> "socialweb" .
+?s8 <http://www.w3.org/ns/dcat#distribution> ?d .
+FILTER (?s7!=?s8)
+}
+}
+ORDER BY ?d

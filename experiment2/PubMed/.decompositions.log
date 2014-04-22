@@ -1,0 +1,106 @@
+2013-12-10 17:09:08,260 - ANAPSID.Decomposer.decomposer - INFO - Decomposition Obtained
+2013-12-10 17:09:08,260 - ANAPSID.Decomposer.decomposer - INFO - SELECT DISTINCT *
+WHERE {
+ {
+           SERVICE <http://pubmed.bio2rdf.org/sparql> { 
+               ?o <http://bio2rdf.org/pubmed_vocabulary:fore_name> ?f1 . 
+               ?o <http://bio2rdf.org/pubmed_vocabulary:last_name> ?o1 . 
+               ?o <http://bio2rdf.org/pubmed_vocabulary:initials> ?h
+           }          . 
+           SERVICE <http://pubmed.bio2rdf.org/sparql> { 
+               ?s1 <http://bio2rdf.org/pubmed_vocabulary:suppl_mesh_heading> <http://bio2rdf.org/pubmed_resource:19648123SUPPL_MESH_HEADING_1> . 
+               ?s1 <http://bio2rdf.org/pubmed_vocabulary:affiliation> ?a . 
+               ?s1 <http://purl.org/dc/terms/identifier> ?i . 
+               ?s1 <http://bio2rdf.org/pubmed_vocabulary:author> ?o . 
+               ?s1 <http://bio2rdf.org/pubmed_vocabulary:publication_model> ?pm . 
+               ?s1 <http://purl.org/dc/terms/abstract> ?a1 . 
+               ?s1 <http://bio2rdf.org/pubmed_vocabulary:owner> ?ow
+           }
+ }
+  UNION 
+ {
+           SERVICE <http://pubmed.bio2rdf.org/sparql> { 
+               ?o <http://bio2rdf.org/pubmed_vocabulary:fore_name> ?f1 . 
+               ?o <http://bio2rdf.org/pubmed_vocabulary:last_name> ?o1 . 
+               ?o <http://bio2rdf.org/pubmed_vocabulary:initials> ?h
+           }          . 
+           SERVICE <http://pubmed.bio2rdf.org/sparql> { 
+               ?s1 <http://bio2rdf.org/pubmed_vocabulary:suppl_mesh_heading> <http://bio2rdf.org/pubmed_resource:19648123SUPPL_MESH_HEADING_2> . 
+               ?s1 <http://bio2rdf.org/pubmed_vocabulary:affiliation> ?a . 
+               ?s1 <http://purl.org/dc/terms/identifier> ?i . 
+               ?s1 <http://bio2rdf.org/pubmed_vocabulary:author> ?o . 
+               ?s1 <http://bio2rdf.org/pubmed_vocabulary:publication_model> ?pm . 
+               ?s1 <http://purl.org/dc/terms/abstract> ?a1 . 
+               ?s1 <http://bio2rdf.org/pubmed_vocabulary:owner> ?ow
+           }
+ }
+}
+2013-12-10 17:09:15,685 - ANAPSID.Decomposer.decomposer - INFO - Decomposition Obtained
+2013-12-10 17:09:15,685 - ANAPSID.Decomposer.decomposer - INFO - SELECT DISTINCT *
+WHERE {
+ {
+           SERVICE <http://pubmed.bio2rdf.org/sparql> { 
+               ?o <http://bio2rdf.org/pubmed_vocabulary:fore_name> ?f1 . 
+               ?o <http://bio2rdf.org/pubmed_vocabulary:last_name> ?o1 . 
+               ?o <http://bio2rdf.org/pubmed_vocabulary:initials> ?h
+           }          . 
+           SERVICE <http://pubmed.bio2rdf.org/sparql> { 
+               ?s1 <http://bio2rdf.org/pubmed_vocabulary:suppl_mesh_heading> <http://bio2rdf.org/pubmed_resource:19648123SUPPL_MESH_HEADING_1> . 
+               ?s1 <http://bio2rdf.org/pubmed_vocabulary:affiliation> ?a . 
+               ?s1 <http://purl.org/dc/terms/identifier> ?i . 
+               ?s1 <http://bio2rdf.org/pubmed_vocabulary:author> ?o . 
+               ?s1 <http://bio2rdf.org/pubmed_vocabulary:publication_model> ?pm . 
+               ?s1 <http://purl.org/dc/terms/abstract> ?a1 . 
+               ?s1 <http://bio2rdf.org/pubmed_vocabulary:owner> ?ow
+           }
+ }
+  UNION 
+ {
+           SERVICE <http://pubmed.bio2rdf.org/sparql> { 
+               ?o <http://bio2rdf.org/pubmed_vocabulary:fore_name> ?f1 . 
+               ?o <http://bio2rdf.org/pubmed_vocabulary:last_name> ?o1 . 
+               ?o <http://bio2rdf.org/pubmed_vocabulary:initials> ?h
+           }          . 
+           SERVICE <http://pubmed.bio2rdf.org/sparql> { 
+               ?s1 <http://bio2rdf.org/pubmed_vocabulary:suppl_mesh_heading> <http://bio2rdf.org/pubmed_resource:19648123SUPPL_MESH_HEADING_2> . 
+               ?s1 <http://bio2rdf.org/pubmed_vocabulary:affiliation> ?a . 
+               ?s1 <http://purl.org/dc/terms/identifier> ?i . 
+               ?s1 <http://bio2rdf.org/pubmed_vocabulary:author> ?o . 
+               ?s1 <http://bio2rdf.org/pubmed_vocabulary:publication_model> ?pm . 
+               ?s1 <http://purl.org/dc/terms/abstract> ?a1 . 
+               ?s1 <http://bio2rdf.org/pubmed_vocabulary:owner> ?ow
+           }
+ }
+}
+2013-12-10 17:09:20,014 - ANAPSID.Decomposer.decomposer - INFO - Decomposition Obtained
+2013-12-10 17:09:20,014 - ANAPSID.Decomposer.decomposer - INFO - SELECT DISTINCT ?s1 ?s2
+WHERE {
+     SERVICE <http://pubmed.bio2rdf.org/sparql> { 
+         ?o1 <http://bio2rdf.org/pubmed_vocabulary:fore_name> ?f1 . 
+         ?o1 <http://bio2rdf.org/pubmed_vocabulary:last_name> ?ln1 . 
+         ?o1 <http://bio2rdf.org/pubmed_vocabulary:initials> ?h1
+     }    . 
+     SERVICE <http://pubmed.bio2rdf.org/sparql> { 
+         ?o2 <http://bio2rdf.org/pubmed_vocabulary:fore_name> ?f2 . 
+         ?o2 <http://bio2rdf.org/pubmed_vocabulary:last_name> ?ln2 . 
+         ?o2 <http://bio2rdf.org/pubmed_vocabulary:initials> ?h2
+     }    . 
+     SERVICE <http://pubmed.bio2rdf.org/sparql> { 
+         ?s1 <http://bio2rdf.org/pubmed_vocabulary:publication_type> 'JournalArticle' . 
+         ?s1 <http://bio2rdf.org/pubmed_vocabulary:affiliation> ?af1 . 
+         ?s1 <http://purl.org/dc/terms/identifier> ?i1 . 
+         ?s1 <http://bio2rdf.org/pubmed_vocabulary:author> ?o1 . 
+         ?s1 <http://bio2rdf.org/pubmed_vocabulary:publication_model> ?pm . 
+         ?s1 <http://purl.org/dc/terms/abstract> ?ab1 . 
+         ?s1 <http://bio2rdf.org/pubmed_vocabulary:owner> ?ow1
+     }    . 
+     SERVICE <http://pubmed.bio2rdf.org/sparql> { 
+         ?s2 <http://bio2rdf.org/pubmed_vocabulary:publication_type> 'EvaluationStudies' . 
+         ?s2 <http://bio2rdf.org/pubmed_vocabulary:author> ?o2 . 
+         ?s2 <http://purl.org/dc/terms/identifier> ?i2 . 
+         ?s2 <http://bio2rdf.org/pubmed_vocabulary:publication_model> ?pm . 
+         ?s2 <http://purl.org/dc/terms/abstract> ?ab2 . 
+         ?s2 <http://bio2rdf.org/pubmed_vocabulary:affiliation> ?af2 . 
+         ?s2 <http://bio2rdf.org/pubmed_vocabulary:owner> ?ow2
+     }
+}

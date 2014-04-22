@@ -1,0 +1,29 @@
+select distinct ?bc where {
+?s4 <http://epo.publicdata.eu/ebd/ontology/bulletinCountry> ?bc.
+?s4 <http://epo.publicdata.eu/ebd/ontology/bulletinFile> ?bf4 .
+?s4 <http://epo.publicdata.eu/ebd/ontology/bulletinIdentifier> ?bi4 .
+?s4 <http://epo.publicdata.eu/ebd/ontology/epoPublicationNumber> "1041130".
+?s4 <http://epo.publicdata.eu/ebd/ontology/hasApplicationStatus> <http://epo.publicdata.eu/ebd/ontology/ApplicationStatusReplace> .
+?s4 <http://epo.publicdata.eu/ebd/ontology/hasInvolvedCountry> ?hic4 .
+?s4 <http://epo.publicdata.eu/ebd/ontology/hasPreviousChange> ?hpc4 .
+?s4 <http://epo.publicdata.eu/ebd/ontology/placeOfApplication> ?poa4 .
+?s4 <http://epo.publicdata.eu/ebd/ontology/publishedDate> ?pd4 .
+?s5 <http://epo.publicdata.eu/ebd/ontology/bulletinCountry> ?bc.
+?s5 <http://epo.publicdata.eu/ebd/ontology/bulletinFile> ?bf5 .
+?s5 <http://epo.publicdata.eu/ebd/ontology/bulletinIdentifier> ?bi5 .
+?s5 <http://epo.publicdata.eu/ebd/ontology/epoPublicationNumber> "1041418".
+?s5 <http://epo.publicdata.eu/ebd/ontology/hasApplicationStatus> <http://epo.publicdata.eu/ebd/ontology/ApplicationStatusReplace> .
+?s5 <http://epo.publicdata.eu/ebd/ontology/hasInvolvedCountry> ?hic5 .
+?s5 <http://epo.publicdata.eu/ebd/ontology/hasPreviousChange> ?hpc5 .
+?s5 <http://epo.publicdata.eu/ebd/ontology/placeOfApplication> ?poa5 .
+?s5 <http://epo.publicdata.eu/ebd/ontology/publishedDate> ?pd5 .
+?s6 <http://epo.publicdata.eu/ebd/ontology/bulletinCountry> ?bc.
+?s6 <http://epo.publicdata.eu/ebd/ontology/bulletinFile> ?bf6 .
+?s6 <http://epo.publicdata.eu/ebd/ontology/bulletinIdentifier> ?bi6 .
+?s6 <http://epo.publicdata.eu/ebd/ontology/epoPublicationNumber> "1052843".
+?s6 <http://epo.publicdata.eu/ebd/ontology/hasApplicationStatus> <http://epo.publicdata.eu/ebd/ontology/ApplicationStatusReplace> .
+?s6 <http://epo.publicdata.eu/ebd/ontology/hasInvolvedCountry> ?hic6 .
+?s6 <http://epo.publicdata.eu/ebd/ontology/hasPreviousChange> ?hpc6 .
+?s6 <http://epo.publicdata.eu/ebd/ontology/placeOfApplication> ?poa6 .
+?s6 <http://epo.publicdata.eu/ebd/ontology/publishedDate> ?pd6 .
+}

@@ -1,0 +1,11 @@
+SELECT DISTINCT ?d1 WHERE {
+?d1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://data.linkedmdb.org/resource/movie/director>.
+?d1 <http://data.linkedmdb.org/resource/movie/directorid> ?id.
+?m1 <http://data.linkedmdb.org/resource/movie/director> ?d1.
+?m1 <http://data.linkedmdb.org/resource/movie/rating> <http://data.linkedmdb.org/resource/content_rating/11>.
+?m1 <http://data.linkedmdb.org/resource/movie/actor> ?a1.
+?m1 <http://data.linkedmdb.org/resource/movie/producer> ?p1.
+?p1 <http://data.linkedmdb.org/resource/movie/producer_name> ?pn.
+?a1 <http://data.linkedmdb.org/resource/movie/actor_name> ?an.
+}
+

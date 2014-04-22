@@ -1,0 +1,10 @@
+SELECT distinct ?d ?label 
+        WHERE { 
+          FILTER (?d = <http://purl.bioontology.org/ontology/RXNORM/617993> || ?d = <http://purl.bioontology.org/ontology/RXNORM/308189>)
+          ?d <http://purl.bioontology.org/ontology/RXNORM/consists_of> ?c.
+          ?c <http://purl.bioontology.org/ontology/RXNORM/has_ingredient> ?i.
+          ?i <http://bioportal.bioontology.org/ontologies/umls/cui> ?cui.
+          ?i <http://www.w3.org/2004/02/skos/core#prefLabel> ?label.
+          ?ndfrtdrug <http://bioportal.bioontology.org/ontologies/umls/cui> ?cui.
+          ?ndfrtdrug <http://purl.bioontology.org/ontology/NDFRT/has_mechanism_of_action> <http://purl.bioontology.org/ontology/NDFRT/N0000000121>.
+        }

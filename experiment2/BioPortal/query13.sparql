@@ -1,0 +1,8 @@
+SELECT ?name ?acr ?country
+WHERE {
+   ?ont <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://omv.ontoware.org/2005/05/ontology#Ontology> .
+   ?ont <http://omv.ontoware.org/2005/05/ontology#acronym> ?acr .
+   ?ont <http://omv.ontoware.org/2005/05/ontology#name> ?name .
+   ?ont <http://omv.ontoware.org/2005/05/ontology#country> ?country .
+}
+LIMIT 10

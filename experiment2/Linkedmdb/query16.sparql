@@ -1,0 +1,17 @@
+SELECT ?d1 WHERE {
+?d1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?d11.
+?d1 <http://data.linkedmdb.org/resource/movie/directorid> ?id.
+?m1 <http://data.linkedmdb.org/resource/movie/director> ?d1.
+?m1 <http://data.linkedmdb.org/resource/movie/rating> ?d12.
+?m1 <http://data.linkedmdb.org/resource/movie/actor> ?a1.
+?m1 <http://data.linkedmdb.org/resource/movie/producer> ?p1.
+?p1 <http://data.linkedmdb.org/resource/movie/producer_name> ?pn.
+?a1 <http://data.linkedmdb.org/resource/movie/actor_name> ?an.
+FILTER (?d11=<http://data.linkedmdb.org/resource/movie/director>)
+FILTER (?d12=<http://data.linkedmdb.org/resource/content_rating/11>)
+}
+ORDER BY ?d1
+LIMIT 100
+OFFSET 100
+
+

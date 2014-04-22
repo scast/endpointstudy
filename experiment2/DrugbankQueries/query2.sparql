@@ -1,0 +1,12 @@
+SELECT DISTINCT *  WHERE {
+   ?drug3 <http://wifo5-04.informatik.uni-mannheim.de/drugbank/resource/drugbank/drugCategory> ?dc3.
+   ?drug4 <http://wifo5-04.informatik.uni-mannheim.de/drugbank/resource/drugbank/drugCategory> .
+   ?I3 <http://wifo5-04.informatik.uni-mannheim.de/drugbank/resource/drugbank/interactionDrug2> ?drug3 .
+   ?I3 <http://wifo5-04.informatik.uni-mannheim.de/drugbank/resource/drugbank/interactionDrug1> ?drug .
+   ?I4 <http://wifo5-04.informatik.uni-mannheim.de/drugbank/resource/drugbank/interactionDrug2> ?drug4 .
+   ?I4 <http://wifo5-04.informatik.uni-mannheim.de/drugbank/resource/drugbank/interactionDrug1> ?drug .
+   FILTER (?dc3=<http://wifo5-04.informatik.uni-mannheim.de/drugbank/resource/drugcategory/antihypertensiveAgents> )
+   FILTER (?dc4=<http://wifo5-04.informatik.uni-mannheim.de/drugbank/resource/drugcategory/anti-bacterialAgents> )
+   FILTER (?drug3 !=?drug4)
+}
+LIMIT 10

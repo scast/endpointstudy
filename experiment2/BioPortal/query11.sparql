@@ -1,0 +1,7 @@
+SELECT DISTINCT ?ont ?acr ?ind ?classes
+WHERE { 
+    ?version <http://omv.ontoware.org/2005/05/ontology#acronym> ?acr .
+    ?version <http://bioportal.bioontology.org/metadata/def/isVersionOfVirtualOntology> ?ont .
+    OPTIONAL {?version <http://omv.ontoware.org/2005/05/ontology#numberOfIndividuals> ?ind . }
+    OPTIONAL { ?version <http://omv.ontoware.org/2005/05/ontology#numberOfClasses> ?classes . }
+}

@@ -1,0 +1,7 @@
+SELECT ?id ?ontologyId ?acronym 
+WHERE {
+    		?ontologyVersion <http://bioportal.bioontology.org/metadata/def/isVersionOfVirtualOntology> ?ontology .
+    		?ontologyVersion <http://bioportal.bioontology.org/metadata/def/id> ?id .
+    		?ontologyVersion <http://omv.ontoware.org/2005/05/ontology#acronym> ?acronym .
+    		?ontology <http://bioportal.bioontology.org/metadata/def/id> ?ontologyId .
+		}

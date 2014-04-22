@@ -1,0 +1,17 @@
+SELECT ?m WHERE {
+?m <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?m2.
+?t1 <http://data.linkedmdb.org/resource/movie/writer> ?m.
+?t2 <http://data.linkedmdb.org/resource/movie/writer> ?m.
+?t1 <http://data.linkedmdb.org/resource/movie/genre> ?o1.
+?o1 <http://data.linkedmdb.org/resource/movie/film_genre_name> "Cult".
+?t2 <http://data.linkedmdb.org/resource/movie/rating> ?m1.
+FILTER (?t1!=?t2)
+FILTER (?m1=<http://data.linkedmdb.org/resource/content_rating/11>)
+FILTER (?m2=<http://data.linkedmdb.org/resource/movie/writer>)
+}
+ORDER BY ?m
+LIMIT 100
+OFFSET 100
+ 
+
+

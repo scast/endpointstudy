@@ -1,0 +1,14 @@
+SELECT ?resolvedValueSet ?resolvedValueSetLocalName ?valueSet ?definitionLocalName ?defintionOfCodeSystemVersion ?definitionOfCodeSystem  ?resolvedValueSetId ?acronym ?valueSetId ?codeSystemVersionAcronym ?codeSystemVersionId
+ WHERE {
+      ?resolvedValueSet <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://bioportal.bioontology.org/metadata/def/OntologyView> .
+      ?resolvedValueSet <http://bioportal.bioontology.org/metadata/def/id> ?resolvedValueSetId .
+      ?resolvedValueSet <http://bioportal.bioontology.org/metadata/def/id> '39991'^^<http://www.w3.org/2001/XMLSchema#integer> .
+      ?resolvedValueSet <http://omv.ontoware.org/2005/05/ontology#acronym> ?acronym .
+      ?resolvedValueSet <http://bioportal.bioontology.org/metadata/def/isVersionOfVirtualOntology> ?valueSet .
+      ?resolvedValueSet <http://bioportal.bioontology.org/metadata/def/isViewOnOntologyVersion> ?defintionOfCodeSystemVersion .
+      ?valueSet <http://bioportal.bioontology.org/metadata/def/id> ?valueSetId .    
+      ?defintionOfCodeSystemVersion <http://omv.ontoware.org/2005/05/ontology#acronym> ?codeSystemVersionAcronym .
+      ?defintionOfCodeSystemVersion <http://bioportal.bioontology.org/metadata/def/id> ?codeSystemVersionId .
+      ?defintionOfCodeSystemVersion  <http://bioportal.bioontology.org/metadata/def/isVersionOfVirtualOntology> ?definitionOfCodeSystem .
+      ?definitionOfCodeSystem <http://bioportal.bioontology.org/metadata/def/id> ?codeSystemId .
+	    }

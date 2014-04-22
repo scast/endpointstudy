@@ -1,0 +1,20 @@
+select distinct ?s1 ?pm1 ?s2
+where {
+?s1 <http://bio2rdf.org/pubmed_vocabulary:publication_type> 'JournalArticle'.
+?s1 <http://bio2rdf.org/pubmed_vocabulary:owner> ?ow.
+?s1 <http://bio2rdf.org/pubmed_vocabulary:author> ?o1.
+?s1 <http://purl.org/dc/terms/identifier> ?i1.
+?s1 <http://bio2rdf.org/pubmed_vocabulary:suppl_mesh_heading> ?mh1.
+?s1 <http://purl.org/dc/terms/title> ?t1.
+?s1 <http://bio2rdf.org/pubmed_vocabulary:publication_model> ?pm1.
+?s2  <http://bio2rdf.org/pubmed_vocabulary:publication_type> 'EvaluationStudies'.
+?s2 <http://bio2rdf.org/pubmed_vocabulary:owner> ?ow.
+?s2 <http://bio2rdf.org/pubmed_vocabulary:author> ?o2.
+?s2 <http://purl.org/dc/terms/identifier> ?i2.
+?s2 <http://purl.org/dc/terms/title> ?t2.
+?s2 <http://bio2rdf.org/pubmed_vocabulary:publication_model> ?pm2.
+?s2 <http://bio2rdf.org/pubmed_vocabulary:suppl_mesh_heading> ?mh2.
+FILTER (?s1 != ?s2)
+FILTER (?pm1 = ?pm2)
+}
+ORDER BY ?pm

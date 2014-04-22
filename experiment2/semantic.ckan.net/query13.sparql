@@ -1,0 +1,24 @@
+select  ?d where {
+?s1 <http://www.w3.org/ns/dcat#keyword> "format-rdf" .
+?s2 <http://www.w3.org/ns/dcat#keyword> "lod" .
+?s3 <http://www.w3.org/ns/dcat#keyword> "published-by-third-party" .
+?s1 <http://www.w3.org/ns/dcat#distribution> ?d .
+?s2 <http://www.w3.org/ns/dcat#distribution> ?d .
+?s3 <http://www.w3.org/ns/dcat#distribution> ?d .
+FILTER (?s1!=?s2)
+FILTER (?s1!=?s3)
+FILTER (?s2!=?s3)
+OPTIONAL
+{
+?s4 <http://www.w3.org/ns/dcat#keyword> "format-owl" .
+?s5 <http://www.w3.org/ns/dcat#keyword> "ontology" .
+?s6 <http://www.w3.org/ns/dcat#keyword> "biomedicine" .
+?s4 <http://www.w3.org/ns/dcat#distribution> ?d .
+?s5 <http://www.w3.org/ns/dcat#distribution> ?d .
+?s6 <http://www.w3.org/ns/dcat#distribution> ?d .
+FILTER (?s4!=?s5)
+FILTER (?s4!=?s6)
+FILTER (?s5!=?s6)
+}
+}
+ORDER BY ?d

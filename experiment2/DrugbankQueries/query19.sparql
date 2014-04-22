@@ -1,0 +1,30 @@
+SELECT DISTINCT ?drug1 ?drug2 ?o ?disease1 ?disease2 
+WHERE {
+{
+?drug1 <http://wifo5-04.informatik.uni-mannheim.de/drugbank/resource/drugbank/drugCategory> <http://wifo5-04.informatik.uni-mannheim.de/drugbank/resource/drugcategory/antineoplasticAgents> .
+?drug1 <http://wifo5-04.informatik.uni-mannheim.de/drugbank/resource/drugbank/massSpecFile> ?o.
+?drug2 <http://wifo5-04.informatik.uni-mannheim.de/drugbank/resource/drugbank/massSpecFile> ?o.
+?drug2 <http://wifo5-04.informatik.uni-mannheim.de/drugbank/resource/drugbank/drugCategory> <http://wifo5-04.informatik.uni-mannheim.de/drugbank/resource/drugcategory/hormoneAntagonists> .
+?o <http://wifo5-04.informatik.uni-mannheim.de/drugbank/resource/drugbank/genbankIdGene> ?g1.
+?o <http://wifo5-04.informatik.uni-mannheim.de/drugbank/resource/drugbank/locus> ?l1.
+OPTIONAL {?drug1 <http://wifo5-04.informatik.uni-mannheim.de/drugbank/resource/drugbank/meltingPoint> ?p1.
+          ?drug1 <http://wifo5-04.informatik.uni-mannheim.de/drugbank/resource/drugbank/possibleDiseaseTarget> ?disease1}.
+OPTIONAL {?drug2 <http://wifo5-04.informatik.uni-mannheim.de/drugbank/resource/drugbank/meltingPoint> ?p2.
+          ?drug2 <http://wifo5-04.informatik.uni-mannheim.de/drugbank/resource/drugbank/possibleDiseaseTarget> ?disease2
+}
+FILTER (?drug1 != ?drug2 )
+FILTER (?disease1 != ?disease2)
+}
+UNION
+{  ?drug1 <http://wifo5-04.informatik.uni-mannheim.de/drugbank/resource/drugbank/drugCategory> <http://wifo5-04.informatik.uni-mannheim.de/drugbank/resource/drugcategory/antibiotics> .
+   ?drug2 <http://wifo5-04.informatik.uni-mannheim.de/drugbank/resource/drugbank/drugCategory> <http://wifo5-04.informatik.uni-mannheim.de/drugbank/resource/drugcategory/antiviralAgents> .
+   ?I1 <http://wifo5-04.informatik.uni-mannheim.de/drugbank/resource/drugbank/interactionDrug2> ?drug1 . 
+   ?I1 <http://wifo5-04.informatik.uni-mannheim.de/drugbank/resource/drugbank/interactionDrug1> ?drug .
+   ?I2 <http://wifo5-04.informatik.uni-mannheim.de/drugbank/resource/drugbank/interactionDrug2> ?drug2 . 
+   ?I2 <http://wifo5-04.informatik.uni-mannheim.de/drugbank/resource/drugbank/interactionDrug1> ?drug .}
+FILTER (?drug1 != ?drug2)
+}
+}
+ORDER BY ?o
+LIMIT 10
+OFFSET 10

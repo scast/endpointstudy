@@ -1,0 +1,26 @@
+select distinct ?d ?xs where {
+?s1 <http://bio2rdf.org/interpro_vocabulary:x-cath> <http://bio2rdf.org/cath:2.10.70.10>.
+?s2 <http://bio2rdf.org/interpro_vocabulary:x-cath> <http://bio2rdf.org/cath:3.40.390.10>.
+?s3 <http://bio2rdf.org/interpro_vocabulary:x-cath> <http://bio2rdf.org/cath:2.10.10.10>.
+?s4 <http://bio2rdf.org/interpro_vocabulary:x-cath> <http://bio2rdf.org/cath:4.10.140.10>.
+?s1 <http://bio2rdf.org/interpro_vocabulary:x-scop> ?xs.
+?s1 <http://bio2rdf.org/interpro_vocabulary:x-pubmed> ?xp1.
+?s1 <http://bio2rdf.org/interpro_vocabulary:found-in> ?fin1.
+?s1 <http://bio2rdf.org/interpro_vocabulary:x-pdb> ?xpdb1.
+?s1 <http://bio2rdf.org/interpro_vocabulary:taxon-distribution> ?d.
+?s2 <http://bio2rdf.org/interpro_vocabulary:taxon-distribution> ?d.
+?s3 <http://bio2rdf.org/interpro_vocabulary:taxon-distribution> ?d.
+?s4 <http://bio2rdf.org/interpro_vocabulary:taxon-distribution> ?d.
+?s2 <http://bio2rdf.org/interpro_vocabulary:x-scop> ?xs.
+?s2 <http://bio2rdf.org/interpro_vocabulary:x-pubmed> ?xp2.
+?s2 <http://bio2rdf.org/interpro_vocabulary:found-in> ?fin2.
+?s2 <http://bio2rdf.org/interpro_vocabulary:x-pdb> ?xpdb2.
+?s3 <http://bio2rdf.org/interpro_vocabulary:x-scop> ?xs.
+?s3 <http://bio2rdf.org/interpro_vocabulary:x-pubmed> ?xp3.
+?s3 <http://bio2rdf.org/interpro_vocabulary:found-in> ?fin3.
+?s3 <http://bio2rdf.org/interpro_vocabulary:x-pdb> ?xpdb3.
+?s4 <http://bio2rdf.org/interpro_vocabulary:x-scop> ?xs.
+?s4 <http://bio2rdf.org/interpro_vocabulary:x-pubmed> ?xp4.
+?s4 <http://bio2rdf.org/interpro_vocabulary:found-in> ?fin4.
+?s4 <http://bio2rdf.org/interpro_vocabulary:x-pdb> ?xpdb4.
+}

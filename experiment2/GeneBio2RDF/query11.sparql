@@ -1,0 +1,41 @@
+select distinct ?o ?lt where {
+?s1 <http://bio2rdf.org/geneid_vocabulary:has_taxid> ?o.
+?s1 <http://bio2rdf.org/geneid_vocabulary:has_map_location> ?l1.
+?s1 <http://bio2rdf.org/geneid_vocabulary:has_nomenclature_status> ?st1.
+?s1 <http://bio2rdf.org/geneid_vocabulary:has_nomenclature_authority> ?a1.
+?s2 <http://bio2rdf.org/geneid_vocabulary:has_taxid> ?o.
+?s2 <http://bio2rdf.org/geneid_vocabulary:has_map_location> ?l2.
+?s2 <http://bio2rdf.org/geneid_vocabulary:has_nomenclature_status> ?st2.
+?s2 <http://bio2rdf.org/geneid_vocabulary:has_nomenclature_authority> ?a2.
+?s3 <http://bio2rdf.org/geneid_vocabulary:has_taxid> ?o.
+?s3  <http://bio2rdf.org/geneid_vocabulary:has_map_location> ?l3.
+?s3 <http://bio2rdf.org/geneid_vocabulary:has_nomenclature_status> ?st3.
+?s3 <http://bio2rdf.org/geneid_vocabulary:has_nomenclature_authority> ?a3.
+?s4 <http://bio2rdf.org/geneid_vocabulary:has_taxid> ?o.
+?s4 <http://bio2rdf.org/geneid_vocabulary:has_nomenclature_authority> ?a4.
+?s4 <http://bio2rdf.org/geneid_vocabulary:has_map_location> ?l4.
+?s4 <http://bio2rdf.org/geneid_vocabulary:has_nomenclature_status> ?st4.
+FILTER (?s1!=?s2)
+FILTER (?s1!=?s3)
+FILTER (?s1!=?s4)
+FILTER (?s2!=?s3)
+FILTER (?s2!=?s4)
+FILTER (?s3!=?s4)
+FILTER (?a1='CG14798')
+FILTER (?a2='b6')
+FILTER (?a3='CG3795')
+FILTER (?a4='CG14797')
+OPTIONAL
+{?s1 <http://bio2rdf.org/geneid_vocabulary:has_locus_tag> ?lt.
+ ?s2 <http://bio2rdf.org/geneid_vocabulary:has_locus_tag> ?lt.
+ ?s3 <http://bio2rdf.org/geneid_vocabulary:has_locus_tag> ?lt.
+ ?s4 <http://bio2rdf.org/geneid_vocabulary:has_locus_tag> ?lt.
+FILTER (?s1!=?s2)
+FILTER (?s1!=?s3)
+FILTER (?s1!=?s4)
+FILTER (?s2!=?s3)
+FILTER (?s2!=?s4)
+FILTER (?s3!=?s4)}
+}
+ORDER BY ?o
+LIMIT 100

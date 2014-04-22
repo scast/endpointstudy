@@ -1,0 +1,10 @@
+SELECT DISTINCT * WHERE {
+?drug1 <http://wifo5-04.informatik.uni-mannheim.de/drugbank/resource/drugbank/drugCategory> ?t1.
+?drug1 <http://wifo5-04.informatik.uni-mannheim.de/drugbank/resource/drugbank/possibleDiseaseTarget> ?o.
+?o <http://wifo5-04.informatik.uni-mannheim.de/drugbank/resource/drugbank/genbankIdGene> ?g1.
+?o <http://wifo5-04.informatik.uni-mannheim.de/drugbank/resource/drugbank/locus> ?l1.
+OPTIONAL {?drug1 <http://wifo5-04.informatik.uni-mannheim.de/drugbank/resource/drugbank/meltingPoint> ?p1.
+          ?drug1 <http://wifo5-04.informatik.uni-mannheim.de/drugbank/resource/drugbank/possibleDiseaseTarget> ?disease1}
+FILTER (?t1=<http://wifo5-04.informatik.uni-mannheim.de/drugbank/resource/drugcategory/antineoplasticAgents> )
+}
+ORDER BY ?o

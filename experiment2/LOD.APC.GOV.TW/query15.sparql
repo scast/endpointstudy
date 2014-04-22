@@ -1,0 +1,30 @@
+select ?t where {
+?s1 <http://lod.apc.gov.tw:8890/schemas/Contest/religion> ?t.
+?s2 <http://lod.apc.gov.tw:8890/schemas/Contest/religion> ?t.
+?s1 <http://lod.apc.gov.tw:8890/schemas/Contest/marriagecustoms> ?m1 .
+?s2 <http://lod.apc.gov.tw:8890/schemas/Contest/marriagecustoms> ?m2.
+?s1 <http://lod.apc.gov.tw:8890/schemas/Contest/ethnic_of> <http://lod.apc.gov.tw:8890/Contest/tribeapproved/ID/170#this>.
+?s2 <http://lod.apc.gov.tw:8890/schemas/Contest/ethnic_of> <http://lod.apc.gov.tw:8890/Contest/tribeapproved/ID/486#this>.
+?s3 <http://lod.apc.gov.tw:8890/schemas/Contest/religion> ?t.
+?s4 <http://lod.apc.gov.tw:8890/schemas/Contest/religion> ?t.
+?s3 <http://lod.apc.gov.tw:8890/schemas/Contest/marriagecustoms> ?m3 .
+?s4 <http://lod.apc.gov.tw:8890/schemas/Contest/marriagecustoms> ?m4.
+?s3 <http://lod.apc.gov.tw:8890/schemas/Contest/ethnic_of> <http://lod.apc.gov.tw:8890/Contest/tribeapproved/ID/290#this>.
+?s4 <http://lod.apc.gov.tw:8890/schemas/Contest/ethnic_of> <http://lod.apc.gov.tw:8890/Contest/tribeapproved/ID/62#this>.
+OPTIONAL
+{?s1 <http://lod.apc.gov.tw:8890/schemas/Contest/aboriginalpopulation> ?ap1.}.
+OPTIONAL
+{?s2 <http://lod.apc.gov.tw:8890/schemas/Contest/aboriginalpopulation> ?ap2.}.
+OPTIONAL
+{?s3 <http://lod.apc.gov.tw:8890/schemas/Contest/aboriginalpopulation> ?ap3.}.
+OPTIONAL
+{?s4 <http://lod.apc.gov.tw:8890/schemas/Contest/aboriginalpopulation> ?ap4.
+}
+FILTER (?s1!=?s2)
+FILTER (?s1!=?s3)
+FILTER (?s1!=?s4)
+FILTER (?s2!=?s3)
+FILTER (?s2!=?s4)
+FILTER (?s3!=?s4)
+}
+ORDER BY ?t

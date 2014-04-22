@@ -1,0 +1,4 @@
+SELECT  ?prop ?val WHERE { 
+    ?res <http://www.w3.org/2000/01/rdf-schema#subclassOf> <http://purl.obolibrary.org/obo/SO_0001411> .
+    ?res <http://www.w3.org/2000/01/rdf-schema#label> ?val
+  }

@@ -1,0 +1,16 @@
+SELECT DISTINCT ?drug1
+WHERE {
+    ?drug1 <http://wifo5-04.informatik.uni-mannheim.de/drugbank/resource/drugbank/possibleDiseaseTarget> <http://wifo5-04.informatik.uni-mannheim.de/diseasome/resource/diseases/673> .
+    ?drug1 <http://wifo5-04.informatik.uni-mannheim.de/drugbank/resource/drugbank/target> ?o.
+    ?o <http://wifo5-04.informatik.uni-mannheim.de/drugbank/resource/drugbank/genbankIdGene> ?g.
+?o <http://wifo5-04.informatik.uni-mannheim.de/drugbank/resource/drugbank/locus> ?l.
+?o <http://wifo5-04.informatik.uni-mannheim.de/drugbank/resource/drugbank/molecularWeight> ?mw.
+?drug <http://wifo5-04.informatik.uni-mannheim.de/drugbank/resource/drugbank/target>?o.
+    ?drug <http://wifo5-04.informatik.uni-mannheim.de/drugbank/resource/drugbank/synonym> ?o1 .
+    OPTIONAL { ?drug <http://www.w3.org/2002/07/owl#sameAs> ?drug5.
+               ?drug <http://wifo5-04.informatik.uni-mannheim.de/drugbank/resource/drugbank/keggCompoundId> ?cpd .
+    }
+}
+LIMIT 10
+OFFSET 2
+

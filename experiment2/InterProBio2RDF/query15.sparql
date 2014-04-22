@@ -1,0 +1,32 @@
+select ?d where {
+{?s1 <http://bio2rdf.org/interpro_vocabulary:x-cath> ?c1.
+?s2 <http://bio2rdf.org/interpro_vocabulary:x-cath> ?c2.
+?s1 <http://bio2rdf.org/interpro_vocabulary:x-cath> ?xc1.
+?s1 <http://bio2rdf.org/interpro_vocabulary:x-scop> ?xs1.
+?s1 <http://bio2rdf.org/interpro_vocabulary:x-pubmed> ?xp1.
+?s1 <http://bio2rdf.org/interpro_vocabulary:taxon-distribution> ?d.
+?s2 <http://bio2rdf.org/interpro_vocabulary:taxon-distribution> ?d.
+?s2 <http://bio2rdf.org/interpro_vocabulary:x-cath> ?xc2.
+?s2 <http://bio2rdf.org/interpro_vocabulary:x-scop> ?xs2.
+?s2 <http://bio2rdf.org/interpro_vocabulary:x-pubmed> ?xp2.
+FILTER (?c1=<http://bio2rdf.org/cath:3.30.50.10> )
+FILTER (?c2=<http://bio2rdf.org/cath:1.10.565.10> )
+FILTER (?s1!=?s2)
+}
+UNION
+{
+?s3 <http://bio2rdf.org/interpro_vocabulary:x-scop> ?c3.
+?s4 <http://bio2rdf.org/interpro_vocabulary:x-scop>  ?c4.
+?s3 <http://bio2rdf.org/interpro_vocabulary:taxon-distribution> ?d.
+?s4 <http://bio2rdf.org/interpro_vocabulary:taxon-distribution> ?d.
+?s3 <http://bio2rdf.org/interpro_vocabulary:x-cath> ?xc3.
+?s3 <http://bio2rdf.org/interpro_vocabulary:x-scop> ?xs3.
+?s3 <http://bio2rdf.org/interpro_vocabulary:x-pubmed> ?xp3.
+?s4 <http://bio2rdf.org/interpro_vocabulary:x-cath> ?xc4.
+?s4 <http://bio2rdf.org/interpro_vocabulary:x-scop> ?xs4.
+?s4 <http://bio2rdf.org/interpro_vocabulary:x-pubmed> ?xp4.
+FILTER (?c3=<http://bio2rdf.org/scop:g.39.1.2> )
+FILTER (?c4=<http://bio2rdf.org/scop:a.123.1.1>)
+FILTER (?s3!=?s4)
+}
+}

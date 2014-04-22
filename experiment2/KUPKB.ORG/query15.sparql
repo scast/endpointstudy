@@ -1,0 +1,42 @@
+SELECT ?genesymbol
+WHERE {   
+{   
+?geneid1 <http://bio2rdf.org/ns/bio2rdf:symbol> ?genesymbol .     
+?geneid1 <http://bio2rdf.org/ns/bio2rdf:xTaxonomy> <http://bio2rdf.org/taxon:10090> . 
+?geneid2 <http://bio2rdf.org/ns/bio2rdf:symbol> ?genesymbol .   
+?geneid2 <http://bio2rdf.org/ns/bio2rdf:xTaxonomy> <http://bio2rdf.org/taxon:10116> .
+FILTER (?geneid1!=?geneid2)
+}
+UNION
+{ 
+?geneid3 <http://bio2rdf.org/ns/bio2rdf:symbol> ?genesymbol .    
+?geneid3 <http://bio2rdf.org/ns/bio2rdf:xTaxonomy> <http://bio2rdf.org/taxon:9615> .
+?geneid4 <http://bio2rdf.org/ns/bio2rdf:symbol> ?genesymbol .     
+?geneid4 <http://bio2rdf.org/ns/bio2rdf:xTaxonomy> <http://bio2rdf.org/taxon:9606> .
+FILTER (?geneid3!=?geneid4)
+}
+{   
+?geneid9 <http://bio2rdf.org/ns/bio2rdf:symbol> ?genesymbol .     
+?geneid9 <http://bio2rdf.org/ns/bio2rdf:xTaxonomy> <http://bio2rdf.org/taxon:10090> . 
+?geneid10 <http://bio2rdf.org/ns/bio2rdf:symbol> ?genesymbol .    
+?geneid10 <http://bio2rdf.org/ns/bio2rdf:xTaxonomy> <http://bio2rdf.org/taxon:10116> .
+FILTER (?geneid9!=?geneid10)
+}
+UNION
+{ 
+?geneid5 <http://bio2rdf.org/ns/bio2rdf:symbol> ?genesymbol .   
+?geneid5 <http://bio2rdf.org/ns/uniprot:xProtein> <http://purl.uniprot.org/uniprot/A0S0A9> .
+?geneid6 <http://bio2rdf.org/ns/bio2rdf:symbol> ?genesymbol .     
+?geneid6 <http://bio2rdf.org/ns/uniprot:xProtein> <http://purl.uniprot.org/uniprot/P0CL80> .
+FILTER (?geneid5!=?geneid6)
+}
+UNION
+{ 
+?geneid7 <http://bio2rdf.org/ns/bio2rdf:symbol> ?genesymbol .    
+?geneid7 <http://bio2rdf.org/ns/uniprot:xProtein> <http://purl.uniprot.org/uniprot/P0CL81> .
+?geneid8 <http://bio2rdf.org/ns/bio2rdf:symbol> ?genesymbol .     
+?geneid8 <http://bio2rdf.org/ns/uniprot:xProtein> <http://purl.uniprot.org/uniprot/P0CL82> .
+FILTER (?geneid7!=?geneid8)
+}
+}
+ORDER BY ?genesymbol

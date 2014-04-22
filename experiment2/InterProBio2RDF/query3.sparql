@@ -1,0 +1,37 @@
+select distinct ?d where {
+?s1 <http://bio2rdf.org/interpro_vocabulary:example-entry> <http://bio2rdf.org/uniprot:G3V801>.
+?s2 <http://bio2rdf.org/interpro_vocabulary:example-entry> <http://bio2rdf.org/uniprot:P06869>.
+?s3 <http://bio2rdf.org/interpro_vocabulary:example-entry> <http://bio2rdf.org/uniprot:P00734>.
+?s4 <http://bio2rdf.org/interpro_vocabulary:example-entry> <http://bio2rdf.org/uniprot:Q24488>.
+?s1 <http://bio2rdf.org/interpro_vocabulary:x-cath> ?xc1.
+?s1 <http://bio2rdf.org/interpro_vocabulary:x-scop> ?xs1.
+?s1 <http://bio2rdf.org/interpro_vocabulary:x-pubmed> ?xp1.
+?s1 <http://bio2rdf.org/interpro_vocabulary:taxon-distribution> ?d.
+?s2 <http://bio2rdf.org/interpro_vocabulary:taxon-distribution> ?d.
+?s3 <http://bio2rdf.org/interpro_vocabulary:taxon-distribution> ?d.
+?s4 <http://bio2rdf.org/interpro_vocabulary:taxon-distribution> ?d.
+?s2 <http://bio2rdf.org/interpro_vocabulary:x-cath> ?xc2.
+?s2 <http://bio2rdf.org/interpro_vocabulary:x-scop> ?xs2.
+?s2 <http://bio2rdf.org/interpro_vocabulary:x-pubmed> ?xp2.
+?s3 <http://bio2rdf.org/interpro_vocabulary:x-cath> ?xc3.
+?s3 <http://bio2rdf.org/interpro_vocabulary:x-scop> ?xs3.
+?s3 <http://bio2rdf.org/interpro_vocabulary:x-pubmed> ?xp3.
+?s4 <http://bio2rdf.org/interpro_vocabulary:x-cath> ?xc4.
+?s4 <http://bio2rdf.org/interpro_vocabulary:x-scop> ?xs4.
+?s4 <http://bio2rdf.org/interpro_vocabulary:x-pubmed> ?xp4.
+OPTIONAL
+{
+?s1 <http://bio2rdf.org/interpro_vocabulary:example-entry> <http://bio2rdf.org/uniprot:G3V801>.
+?s2 <http://bio2rdf.org/interpro_vocabulary:example-entry> <http://bio2rdf.org/uniprot:P06869>.
+?s3 <http://bio2rdf.org/interpro_vocabulary:example-entry> <http://bio2rdf.org/uniprot:P00734>.
+?s4 <http://bio2rdf.org/interpro_vocabulary:example-entry> <http://bio2rdf.org/uniprot:Q24488>.
+?s1 <http://bio2rdf.org/interpro_vocabulary:found-in> ?fin1.
+?s1 <http://bio2rdf.org/interpro_vocabulary:x-pdb> ?xpdb1.
+?s2 <http://bio2rdf.org/interpro_vocabulary:found-in> ?fin2.
+?s2 <http://bio2rdf.org/interpro_vocabulary:x-pdb> ?xpdb2.
+?s3 <http://bio2rdf.org/interpro_vocabulary:found-in> ?fin3.
+?s3 <http://bio2rdf.org/interpro_vocabulary:x-pdb> ?xpdb3.
+?s4 <http://bio2rdf.org/interpro_vocabulary:found-in> ?fin4.
+?s4 <http://bio2rdf.org/interpro_vocabulary:x-pdb> ?xpdb4.
+}
+}

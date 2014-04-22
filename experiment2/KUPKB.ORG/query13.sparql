@@ -1,0 +1,14 @@
+SELECT ?s1
+WHERE {      
+?c11 <http://www.ebi.ac.uk/efo/definition_citation> ?c1 .
+?c11 <http://www.ebi.ac.uk/efo/organizational_class> ?t1 .
+?c11 <http://www.ebi.ac.uk/efo/alternative_term> ?at1 .
+?c11 <http://www.ebi.ac.uk/efo/bioportal_provenance> ?bp1 .
+?s1 <http://www.ebi.ac.uk/efo/definition_citation> ?c1 .
+?s1 <http://www.ebi.ac.uk/efo/organizational_class> ?t1 .
+?s1  <http://www.ebi.ac.uk/efo/alternative_term> ?at1 .
+?s1 <http://www.ebi.ac.uk/efo/bioportal_provenance> ?bp1 .
+FILTER (?c11=<http://www.ebi.ac.uk/efo/EFO_0000097>)
+}
+ORDER BY ?s1
+

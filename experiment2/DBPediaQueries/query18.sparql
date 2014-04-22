@@ -1,0 +1,26 @@
+select distinct *
+where {
+?p <http://dbpedia.org/property/associatedActs> ?na1.
+?p <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?t1. 
+?p <http://purl.org/dc/terms/subject> ?ss1.
+?p <http://dbpedia.org/ontology/activeYearsStartYear> ?ac1.
+?p <http://dbpedia.org/ontology/associatedBand> ?ab11.
+?p <http://dbpedia.org/ontology/associatedMusicalArtist> ?ama11.
+?p <http://dbpedia.org/property/alternativeNames> ?altN1.
+?p <http://dbpedia.org/property/associatedActs> ?aa11.
+?ama1 <http://dbpedia.org/ontology/activeYearsEndYear> ?aye1.
+?ama1 <http://dbpedia.org/ontology/activeYearsStartYear> ?ays1.
+?ama1 <http://dbpedia.org/ontology/background> ?bg1.
+?ama1 <http://dbpedia.org/property/occupation> ?oc1.
+?ab1 <http://xmlns.com/foaf/0.1/homepage> ?hm1.
+?ab1 <http://xmlns.com/foaf/0.1/isPrimaryTopicOf> ?iPt1.
+?ab1 <http://www.w3.org/ns/prov#wasDerivedFrom> ?wd1.
+?ab1 <http://dbpedia.org/property/hasPhotoCollection> ?yA1.
+?aa1 <http://dbpedia.org/ontology/activeYearsEndYear> ?aye2.
+?aa1 <http://dbpedia.org/ontology/activeYearsStartYear> ?ays2.
+FILTER (?na1 = <http://dbpedia.org/resource/Enrique_Iglesias>)
+FILTER (?ama11 = ?ama1)
+FILTER (?aba11 = ?aba1)
+FILTER (?aa11= ?aa1)
+}
+ORDER BY ?ss1

@@ -1,0 +1,3 @@
+SELECT DISTINCT * WHERE { 
+   ?s <http://protege.stanford.edu/ontologies/mappings/mappings.rdfs#source> <http://purl.obolibrary.org/obo/DOID_8545> .
+   ?s <http://protege.stanford.edu/ontologies/mappings/mappings.rdfs#target> ?target . }

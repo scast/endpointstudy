@@ -1,0 +1,34 @@
+select ?bc where {
+?s1 <http://epo.publicdata.eu/ebd/ontology/bulletinCountry> ?bc.
+?s1 <http://epo.publicdata.eu/ebd/ontology/bulletinFile> ?bf1 .
+?s1 <http://epo.publicdata.eu/ebd/ontology/bulletinIdentifier> ?bi1 .
+?s1 <http://epo.publicdata.eu/ebd/ontology/epoPublicationNumber> "1101502".
+?s1 <http://epo.publicdata.eu/ebd/ontology/hasApplicationStatus> <http://epo.publicdata.eu/ebd/ontology/ApplicationStatusReplace> .
+?s1 <http://epo.publicdata.eu/ebd/ontology/hasInvolvedCountry> ?hic1 .
+?s1 <http://epo.publicdata.eu/ebd/ontology/hasPreviousChange> ?hpc1 .
+?s1 <http://epo.publicdata.eu/ebd/ontology/placeOfApplication> ?poa1 .
+?s1 <http://epo.publicdata.eu/ebd/ontology/publishedDate> ?pd1 .
+?s2 <http://epo.publicdata.eu/ebd/ontology/bulletinCountry> ?bc.
+?s2 <http://epo.publicdata.eu/ebd/ontology/bulletinFile> ?bf2 .
+?s2 <http://epo.publicdata.eu/ebd/ontology/bulletinIdentifier> ?bi2 .
+?s2 <http://epo.publicdata.eu/ebd/ontology/epoPublicationNumber> "1047062".
+?s2 <http://epo.publicdata.eu/ebd/ontology/hasApplicationStatus> <http://epo.publicdata.eu/ebd/ontology/ApplicationStatusReplace> .
+?s2 <http://epo.publicdata.eu/ebd/ontology/hasInvolvedCountry> ?hic2 .
+?s2 <http://epo.publicdata.eu/ebd/ontology/hasPreviousChange> ?hpc2 .
+?s2 <http://epo.publicdata.eu/ebd/ontology/placeOfApplication> ?poa2 .
+?s2 <http://epo.publicdata.eu/ebd/ontology/publishedDate> ?pd2 .
+?s3 <http://epo.publicdata.eu/ebd/ontology/bulletinCountry> ?bc.
+?s3 <http://epo.publicdata.eu/ebd/ontology/bulletinFile> ?bf3 .
+?s3 <http://epo.publicdata.eu/ebd/ontology/bulletinIdentifier> ?bi3 .
+?s3 <http://epo.publicdata.eu/ebd/ontology/epoPublicationNumber> "1020899".
+?s3 <http://epo.publicdata.eu/ebd/ontology/hasApplicationStatus> <http://epo.publicdata.eu/ebd/ontology/ApplicationStatusReplace> .
+?s3 <http://epo.publicdata.eu/ebd/ontology/hasInvolvedCountry> ?hic3 .
+?s3 <http://epo.publicdata.eu/ebd/ontology/hasPreviousChange> ?hpc3 .
+?s3 <http://epo.publicdata.eu/ebd/ontology/placeOfApplication> ?poa3 .
+?s3 <http://epo.publicdata.eu/ebd/ontology/publishedDate> ?pd3 .
+FILTER(?s1!=?s2)
+FILTER(?s1!=?s3)
+FILTER(?s2!=?s3)
+}
+LIMIT 10
+OFFSET 10

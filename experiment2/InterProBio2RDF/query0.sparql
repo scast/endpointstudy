@@ -1,0 +1,36 @@
+select distinct ?p where {
+?s1 <http://bio2rdf.org/interpro_vocabulary:contains> ?c1.
+?s2 <http://bio2rdf.org/interpro_vocabulary:contains> ?c2.
+?s3 <http://bio2rdf.org/interpro_vocabulary:contains> ?c3.
+?s4 <http://bio2rdf.org/interpro_vocabulary:contains> ?c4.
+?s1 <http://purl.org/dc/terms/rights> ?r.
+?s1 <http://purl.org/dc/terms/creator> ?c.
+?s1 <http://purl.org/dc/terms/publisher> ?p.
+?s2 <http://purl.org/dc/terms/rights> ?r.
+?s2 <http://purl.org/dc/terms/creator> ?c.
+?s2 <http://purl.org/dc/terms/publisher> ?p.
+?s3 <http://purl.org/dc/terms/rights> ?r.
+?s3 <http://purl.org/dc/terms/creator> ?c.
+?s3 <http://purl.org/dc/terms/publisher> ?p.
+?s4 <http://purl.org/dc/terms/rights> ?r.
+?s4 <http://purl.org/dc/terms/creator> ?c.
+?s4 <http://purl.org/dc/terms/publisher> ?p.
+OPTIONAL
+{?s1 <http://www.w3.org/ns/prov#wasDerivedFrom> ?df.}.
+OPTIONAL
+{ ?s2 <http://www.w3.org/ns/prov#wasDerivedFrom> ?df.}.
+OPTIONAL
+{ ?s3 <http://www.w3.org/ns/prov#wasDerivedFrom> ?df.}.
+OPTIONAL
+{ ?s4 <http://www.w3.org/ns/prov#wasDerivedFrom> ?df.}
+FILTER (?c1='PIRSF v2.81 (3129 entries) [18-JUN-12]')
+FILTER (?c2='PROSITE v20.83 (1308 entries) [13-JUN-12]')
+FILTER (?c3='PRODOM v2006.1 (1894 entries) [23-APR-09]')
+FILTER (?c4='PANTHER v7.2 (71246 entries) [16-MAR-12]')
+FILTER (?s1!=?s2)
+FILTER (?s1!=?s3)
+FILTER (?s1!=?s4)
+FILTER (?s2!=?s3)
+FILTER (?s2!=?s4)
+FILTER (?s3!=?s4)
+}

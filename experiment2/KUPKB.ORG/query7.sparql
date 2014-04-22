@@ -1,0 +1,53 @@
+SELECT DISTINCT ?genesymbol
+WHERE {  
+{ 
+?geneid1 <http://bio2rdf.org/ns/bio2rdf:symbol> ?genesymbol .     
+?geneid1 <http://bio2rdf.org/ns/bio2rdf:xTaxonomy> <http://bio2rdf.org/taxon:10090> . 
+?geneid1 <http://bio2rdf.org/ns/bio2rdf:symbol> ?s1 .
+?geneid2 <http://bio2rdf.org/ns/bio2rdf:symbol> ?genesymbol . 
+?geneid2 <http://bio2rdf.org/ns/bio2rdf:symbol> ?s2 .    
+?geneid2 <http://bio2rdf.org/ns/bio2rdf:xTaxonomy> <http://bio2rdf.org/taxon:10116> . 
+?geneid3 <http://bio2rdf.org/ns/bio2rdf:symbol> ?genesymbol . 
+?geneid3 <http://bio2rdf.org/ns/bio2rdf:symbol> ?s3 .   
+?geneid3 <http://bio2rdf.org/ns/bio2rdf:xTaxonomy> <http://bio2rdf.org/taxon:9615> .
+}
+UNION
+{
+?geneid4 <http://bio2rdf.org/ns/bio2rdf:symbol> ?genesymbol . 
+?geneid4 <http://bio2rdf.org/ns/bio2rdf:symbol> ?s4 .    
+?geneid4 <http://bio2rdf.org/ns/bio2rdf:xTaxonomy> <http://bio2rdf.org/taxon:9606> .    
+?geneid5 <http://bio2rdf.org/ns/bio2rdf:symbol> ?genesymbol . 
+?geneid5 <http://bio2rdf.org/ns/bio2rdf:symbol> ?s5 .   
+?geneid5 <http://bio2rdf.org/ns/uniprot:xProtein> <http://purl.uniprot.org/uniprot/A0S0A9> .
+?geneid6 <http://bio2rdf.org/ns/bio2rdf:symbol> ?genesymbol . 
+?geneid6 <http://bio2rdf.org/ns/bio2rdf:symbol> ?s6 .    
+?geneid6 <http://bio2rdf.org/ns/uniprot:xProtein> <http://purl.uniprot.org/uniprot/P0CL80> . 
+}
+UNION
+{
+?geneid7 <http://bio2rdf.org/ns/bio2rdf:symbol> ?genesymbol . 
+?geneid7 <http://bio2rdf.org/ns/bio2rdf:symbol> ?s7 .   
+?geneid7 <http://bio2rdf.org/ns/uniprot:xProtein> <http://purl.uniprot.org/uniprot/P0CL81> .
+?geneid8 <http://bio2rdf.org/ns/bio2rdf:symbol> ?genesymbol . 
+?geneid8 <http://bio2rdf.org/ns/bio2rdf:symbol> ?s8 .    
+?geneid8 <http://bio2rdf.org/ns/uniprot:xProtein> <http://purl.uniprot.org/uniprot/P0CL82> .
+}
+UNION
+{
+?geneid9 <http://bio2rdf.org/ns/bio2rdf:symbol> ?genesymbol . 
+?geneid9 <http://bio2rdf.org/ns/bio2rdf:symbol> ?s9 .    
+?geneid9 <http://bio2rdf.org/ns/uniprot:xProtein> <http://purl.uniprot.org/uniprot/Q1WG82> .
+?geneid10 <http://bio2rdf.org/ns/bio2rdf:symbol> ?genesymbol . 
+?geneid10 <http://bio2rdf.org/ns/bio2rdf:symbol> ?s10 .    
+?geneid10 <http://www.e-lico.eu/data/kupkb/hasHomolog> <http://bio2rdf.org/geneid:100125288> .
+}
+UNION
+{
+?geneid11 <http://bio2rdf.org/ns/bio2rdf:symbol> ?genesymbol . 
+?geneid11 <http://bio2rdf.org/ns/bio2rdf:symbol> ?s11 .    
+?geneid11 <http://www.e-lico.eu/data/kupkb/hasHomolog> <http://bio2rdf.org/geneid:286983> .
+?geneid12 <http://bio2rdf.org/ns/bio2rdf:symbol> ?genesymbol . 
+?geneid12 <http://bio2rdf.org/ns/bio2rdf:symbol> ?s12 .    
+?geneid12 <http://bio2rdf.org/ns/uniprot:xProtein> <http://purl.uniprot.org/uniprot/D3Z4R7> .
+}
+}

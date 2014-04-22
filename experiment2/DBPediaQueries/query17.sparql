@@ -1,0 +1,17 @@
+select distinct ?o1
+where {
+?d1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?t1.
+?d2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  ?t2.
+?d1 <http://dbpedia.org/ontology/atcPrefix> ?o1.
+?d2 <http://dbpedia.org/ontology/atcPrefix> ?o2.
+ ?d1 <http://dbpedia.org/ontology/casNumber> ?p1.
+ ?d1 <http://dbpedia.org/property/chemspiderid> ?sm1.
+ ?d1 <http://dbpedia.org/property/target> ?k1.
+ ?d2 <http://dbpedia.org/ontology/casNumber> ?p2.
+ ?d2 <http://dbpedia.org/property/chemspiderid> ?sm2.
+ ?d2 <http://dbpedia.org/property/target> ?k2.
+FILTER (?o1 = ?o2)
+FILTER (?t1=<http://dbpedia.org/class/yago/Antibody115027189>)
+FILTER (?t2=<http://dbpedia.org/class/yago/MonoclonalAntibody115029781>)
+}
+ORDER BY ?k1

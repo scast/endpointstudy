@@ -1,0 +1,34 @@
+select ?d where {
+{?d <http://bio2rdf.org/drugbank_vocabulary:category> 'Dietary supplement'. 
+OPTIONAL
+ {?d <http://bio2rdf.org/drugbank_vocabulary:indication> ?i.
+  ?d <http://bio2rdf.org/drugbank_vocabulary:biotransformation> ?b.
+  ?d <http://bio2rdf.org/drugbank_vocabulary:synonym> ?s.
+  ?d <http://bio2rdf.org/drugbank_vocabulary:toxity> ?t.
+   }
+}
+UNION
+{
+?d <http://bio2rdf.org/drugbank_vocabulary:category> 'Nutraceutical'.
+OPTIONAL 
+ {?d <http://bio2rdf.org/drugbank_vocabulary:indication> ?i.
+  ?d <http://bio2rdf.org/drugbank_vocabulary:biotransformation> ?b.
+  ?d <http://bio2rdf.org/drugbank_vocabulary:synonym> ?s.
+  ?d <http://bio2rdf.org/drugbank_vocabulary:toxity> ?t.
+   }
+}
+UNION
+{
+?d <http://bio2rdf.org/drugbank_vocabulary:category> 'Small molecule'.
+OPTIONAL
+ {?d <http://bio2rdf.org/drugbank_vocabulary:indication> ?i.
+  ?d <http://bio2rdf.org/drugbank_vocabulary:biotransformation> ?b.
+  ?d <http://bio2rdf.org/drugbank_vocabulary:synonym> ?s.
+  ?d <http://bio2rdf.org/drugbank_vocabulary:toxity> ?t.
+   }
+}
+}
+ORDER BY ?d
+LIMIT 10
+OFFSET 10
+

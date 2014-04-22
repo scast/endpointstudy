@@ -1,0 +1,15 @@
+SELECT DISTINCT ?drug
+WHERE 
+{  ?drug <http://wifo5-04.informatik.uni-mannheim.de/drugbank/resource/drugbank/drugCategory> <http://wifo5-04.informatik.uni-mannheim.de/drugbank/resource/drugcategory/micronutrient> .
+    ?drug <http://wifo5-04.informatik.uni-mannheim.de/drugbank/resource/drugbank/drugCategory> <http://wifo5-04.informatik.uni-mannheim.de/drugbank/resource/drugcategory/dietarySupplement> .
+    ?drug <http://wifo5-04.informatik.uni-mannheim.de/drugbank/resource/drugbank/drugCategory> <http://wifo5-04.informatik.uni-mannheim.de/drugbank/resource/drugcategory/non-essentialAminoAcids> .
+   OPTIONAL
+  {?drug <http://wifo5-04.informatik.uni-mannheim.de/drugbank/resource/drugbank/indication> ?i .
+   ?drug <http://wifo5-04.informatik.uni-mannheim.de/drugbank/resource/drugbank/biotransformation> ?b .
+    }.
+    OPTIONAL { ?drug <http://wifo5-04.informatik.uni-mannheim.de/drugbank/resource/drugbank/keggCompoundId> ?cpd.
+    } .
+    OPTIONAL { ?drug <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Drug> 
+    }
+}
+

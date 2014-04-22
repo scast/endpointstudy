@@ -1,0 +1,74 @@
+select ?has where {
+{
+?s1 <http://epo.publicdata.eu/ebd/ontology/bulletinCountry> ?bc1.
+?s1 <http://epo.publicdata.eu/ebd/ontology/bulletinFile> ?bf1 .
+?s1 <http://epo.publicdata.eu/ebd/ontology/bulletinIdentifier> ?bi1 .
+?s1 <http://epo.publicdata.eu/ebd/ontology/epoPublicationNumber> ?epn1.
+?s1 <http://epo.publicdata.eu/ebd/ontology/hasApplicationStatus> ?has .
+?s1 <http://epo.publicdata.eu/ebd/ontology/hasInvolvedCountry> ?hic1 .
+?s1 <http://epo.publicdata.eu/ebd/ontology/hasPreviousChange> ?hpc1 .
+?s1 <http://epo.publicdata.eu/ebd/ontology/placeOfApplication> ?ap1 .
+?s1 <http://epo.publicdata.eu/ebd/ontology/publishedDate> ?pd1 .
+?s2 <http://epo.publicdata.eu/ebd/ontology/bulletinCountry> ?bc2.
+?s2 <http://epo.publicdata.eu/ebd/ontology/bulletinFile> ?bf2 .
+?s2 <http://epo.publicdata.eu/ebd/ontology/bulletinIdentifier> ?bi2 .
+?s2 <http://epo.publicdata.eu/ebd/ontology/epoPublicationNumber> ?epn2.
+?s2 <http://epo.publicdata.eu/ebd/ontology/hasApplicationStatus> ?has .
+?s2 <http://epo.publicdata.eu/ebd/ontology/hasInvolvedCountry> ?hic2 .
+?s2 <http://epo.publicdata.eu/ebd/ontology/hasPreviousChange> ?hpc2 .
+?s2 <http://epo.publicdata.eu/ebd/ontology/placeOfApplication>  ?ap2 .
+?s2 <http://epo.publicdata.eu/ebd/ontology/publishedDate> ?pd2 .
+FILTER (?ap1=<http://epo.publicdata.eu/ebd/ontology/applicationPlace/09> )
+FILTER (?ap2=<http://epo.publicdata.eu/ebd/ontology/applicationPlace/10>)
+FILTER (?ap1 != ?ap2)
+}
+UNION
+{
+?s3 <http://epo.publicdata.eu/ebd/ontology/bulletinCountry> ?bc3.
+?s3 <http://epo.publicdata.eu/ebd/ontology/bulletinFile> ?bf3 .
+?s3 <http://epo.publicdata.eu/ebd/ontology/bulletinIdentifier> ?bi3 .
+?s3 <http://epo.publicdata.eu/ebd/ontology/epoPublicationNumber> ?epn3.
+?s3 <http://epo.publicdata.eu/ebd/ontology/hasApplicationStatus> ?has .
+?s3 <http://epo.publicdata.eu/ebd/ontology/hasInvolvedCountry> ?hic3 .
+?s3 <http://epo.publicdata.eu/ebd/ontology/hasPreviousChange> ?hpc3 .
+?s3 <http://epo.publicdata.eu/ebd/ontology/placeOfApplication> ?ap3 .
+?s3 <http://epo.publicdata.eu/ebd/ontology/publishedDate> ?pd3 .
+?s4 <http://epo.publicdata.eu/ebd/ontology/bulletinCountry> ?bc4.
+?s4 <http://epo.publicdata.eu/ebd/ontology/bulletinFile> ?bf4 .
+?s4 <http://epo.publicdata.eu/ebd/ontology/bulletinIdentifier> ?bi4 .
+?s4 <http://epo.publicdata.eu/ebd/ontology/epoPublicationNumber> ?epn4.
+?s4 <http://epo.publicdata.eu/ebd/ontology/hasApplicationStatus> ?has .
+?s4 <http://epo.publicdata.eu/ebd/ontology/hasInvolvedCountry> ?hic4 .
+?s4 <http://epo.publicdata.eu/ebd/ontology/hasPreviousChange> ?hpc4 .
+?s4 <http://epo.publicdata.eu/ebd/ontology/placeOfApplication> ?ap4 .
+?s4 <http://epo.publicdata.eu/ebd/ontology/publishedDate> ?pd4 .
+FILTER (?ap3=<http://epo.publicdata.eu/ebd/ontology/applicationPlace/09> )
+FILTER (?ap4=<http://epo.publicdata.eu/ebd/ontology/applicationPlace/10>)
+FILTER (?ap3 != ?ap4)
+}
+UNION
+{
+?s5 <http://epo.publicdata.eu/ebd/ontology/bulletinCountry> ?bc5.
+?s5 <http://epo.publicdata.eu/ebd/ontology/bulletinFile> ?bf5 .
+?s5 <http://epo.publicdata.eu/ebd/ontology/bulletinIdentifier> ?bi5 .
+?s5 <http://epo.publicdata.eu/ebd/ontology/epoPublicationNumber> ?epn5.
+?s5 <http://epo.publicdata.eu/ebd/ontology/hasApplicationStatus> ?has .
+?s5 <http://epo.publicdata.eu/ebd/ontology/hasInvolvedCountry> ?hic5 .
+?s5 <http://epo.publicdata.eu/ebd/ontology/hasPreviousChange> ?hpc5 .
+?s5 <http://epo.publicdata.eu/ebd/ontology/placeOfApplication> ?ap5 .
+?s5 <http://epo.publicdata.eu/ebd/ontology/publishedDate> ?pd5 .
+?s6 <http://epo.publicdata.eu/ebd/ontology/bulletinCountry> ?bc6.
+?s6 <http://epo.publicdata.eu/ebd/ontology/bulletinFile> ?bf6 .
+?s6 <http://epo.publicdata.eu/ebd/ontology/bulletinIdentifier> ?bi6 .
+?s6 <http://epo.publicdata.eu/ebd/ontology/epoPublicationNumber> ?epn6.
+?s6 <http://epo.publicdata.eu/ebd/ontology/hasApplicationStatus> ?has .
+?s6 <http://epo.publicdata.eu/ebd/ontology/hasInvolvedCountry> ?hic6 .
+?s6 <http://epo.publicdata.eu/ebd/ontology/hasPreviousChange> ?hpc6 .
+?s6 <http://epo.publicdata.eu/ebd/ontology/placeOfApplication> ?ap6 .
+?s6 <http://epo.publicdata.eu/ebd/ontology/publishedDate> ?pd6 .
+FILTER (?ap5=<http://epo.publicdata.eu/ebd/ontology/applicationPlace/09> )
+FILTER (?ap6=<http://epo.publicdata.eu/ebd/ontology/applicationPlace/10>)
+FILTER (?ap5 != ?ap6)
+}
+}
+ORDER BY ?has

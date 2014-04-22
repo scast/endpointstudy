@@ -1,0 +1,3 @@
+SELECT ?mappingId WHERE {  
+   ?mappingId <http://protege.stanford.edu/ontologies/mappings/mappings.rdfs#relation> <http://www.w3.org/2004/02/skos/core#exactMatch> . }
+LIMIT 100

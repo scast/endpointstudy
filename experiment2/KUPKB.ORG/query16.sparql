@@ -1,0 +1,27 @@
+SELECT ?genesymbol
+WHERE {   
+?geneid1 <http://bio2rdf.org/ns/bio2rdf:symbol> ?genesymbol .     
+?geneid1 <http://bio2rdf.org/ns/bio2rdf:xTaxonomy> <http://bio2rdf.org/taxon:10090> . 
+?geneid2 <http://bio2rdf.org/ns/bio2rdf:symbol> ?genesymbol .    
+?geneid2 <http://bio2rdf.org/ns/bio2rdf:xTaxonomy> <http://bio2rdf.org/taxon:10116> . 
+?geneid3 <http://bio2rdf.org/ns/bio2rdf:symbol> ?genesymbol .    
+?geneid3 <http://bio2rdf.org/ns/bio2rdf:xTaxonomy> <http://bio2rdf.org/taxon:9615> .
+?geneid4 <http://bio2rdf.org/ns/bio2rdf:symbol> ?genesymbol .     
+?geneid4 <http://bio2rdf.org/ns/bio2rdf:xTaxonomy> <http://bio2rdf.org/taxon:9606> .   
+?geneid1 <http://bio2rdf.org/ns/bio2rdf:symbol> ?genesymbol .     
+?geneid1 <http://bio2rdf.org/ns/bio2rdf:xTaxonomy> <http://bio2rdf.org/taxon:10090> . 
+?geneid2 <http://bio2rdf.org/ns/bio2rdf:symbol> ?genesymbol .     
+?geneid2 <http://bio2rdf.org/ns/bio2rdf:xTaxonomy> <http://bio2rdf.org/taxon:10116> . 
+?geneid5 <http://bio2rdf.org/ns/bio2rdf:symbol> ?genesymbol . 
+FILTER (?geneid1!=?geneid2)
+FILTER (?geneid1!=?geneid3) 
+FILTER (?geneid1!=?geneid4)
+FILTER (?geneid1!=?geneid5)
+FILTER (?geneid2!=?geneid3) 
+FILTER (?geneid2!=?geneid4)
+FILTER (?geneid2!=?geneid5)
+FILTER (?geneid3!=?geneid4)
+FILTER (?geneid3!=?geneid5)
+FILTER (?geneid4!=?geneid5)
+}
+ORDER BY ?genesymbol

@@ -1,0 +1,49 @@
+select ?o
+where {
+{
+?d1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?t1.
+?d2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  ?t2.
+?d1 <http://dbpedia.org/property/routesOfAdministration> ?o.
+?d2 <http://dbpedia.org/property/routesOfAdministration> ?o.
+?d1 <http://dbpedia.org/ontology/atcPrefix> ?c1.
+?d1 <http://dbpedia.org/ontology/atcSuffix> ?p1.
+?d1 <http://dbpedia.org/ontology/atcSupplemental> ?u1.
+?d1 <http://dbpedia.org/ontology/casNumber> ?s1.
+?d1 <http://dbpedia.org/ontology/drugbank> ?sm1.
+?d1 <http://dbpedia.org/ontology/wikiPageID> ?pu1.
+?d1 <http://dbpedia.org/ontology/wikiPageRevisionID> ?m1.
+ ?d2 <http://dbpedia.org/ontology/atcPrefix> ?c2.
+ ?d2 <http://dbpedia.org/ontology/atcSuffix> ?p2.
+?d2 <http://dbpedia.org/ontology/casNumber> ?s2.
+ ?d2 <http://dbpedia.org/ontology/drugbank> ?sm2.
+?d2 <http://dbpedia.org/ontology/wikiPageID> ?pu2.
+ ?d2 <http://dbpedia.org/ontology/wikiPageRevisionID> ?m2.
+FILTER (?d1 != ?d2)
+FILTER (?t1 = <http://dbpedia.org/class/yago/Antibody115027189>)
+FILTER (?t2 =<http://dbpedia.org/class/yago/MonoclonalAntibody115029781>)
+}
+UNION
+{
+?d3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?t3 .
+?d4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?t4 .
+?d3 <http://dbpedia.org/property/routesOfAdministration> ?o.
+?d4 <http://dbpedia.org/property/routesOfAdministration> ?o.
+?d3 <http://dbpedia.org/ontology/atcPrefix> ?c3.
+?d3 <http://dbpedia.org/ontology/atcSuffix> ?p3.
+?d3 <http://dbpedia.org/ontology/atcSupplemental> ?u3.
+?d3 <http://dbpedia.org/ontology/casNumber> ?s3.
+?d3 <http://dbpedia.org/ontology/drugbank> ?sm3.
+?d3 <http://dbpedia.org/ontology/wikiPageID> ?pu3.
+?d3 <http://dbpedia.org/ontology/wikiPageRevisionID> ?m3.
+ ?d4 <http://dbpedia.org/ontology/atcPrefix> ?c4.
+ ?d4 <http://dbpedia.org/ontology/atcSuffix> ?p4.
+?d4 <http://dbpedia.org/ontology/casNumber> ?s4.
+ ?d4 <http://dbpedia.org/ontology/drugbank> ?sm4.
+?d4 <http://dbpedia.org/ontology/wikiPageID> ?pu4.
+ ?d4 <http://dbpedia.org/ontology/wikiPageRevisionID> ?m4.
+}
+FILTER (?d3 != ?d4)
+FILTER (?t3 = <http://dbpedia.org/class/yago/OrganicCompound114727670>)
+FILTER (?t4 =  <http://dbpedia.org/class/yago/MonoclonalAntibodiesForTumors>)
+}
+

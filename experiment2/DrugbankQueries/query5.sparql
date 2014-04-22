@@ -1,0 +1,12 @@
+SELECT DISTINCT ?drug5 ?drug6
+WHERE {
+   ?drug1 <http://wifo5-04.informatik.uni-mannheim.de/drugbank/resource/drugbank/possibleDiseaseTarget>  ?t1 .
+   ?drug1 <http://wifo5-04.informatik.uni-mannheim.de/drugbank/resource/drugbank/possibleDiseaseTarget>  ?t2.
+   ?I1 <http://wifo5-04.informatik.uni-mannheim.de/drugbank/resource/drugbank/interactionDrug1> ?drug1 .
+   ?I1 <http://wifo5-04.informatik.uni-mannheim.de/drugbank/resource/drugbank/interactionDrug2> ?drug .
+   ?drug1 <http://www.w3.org/2002/07/owl#sameAs> ?drug5 .
+   ?drug <http://www.w3.org/2002/07/owl#sameAs> ?drug6 .
+FILTER (?t1=<http://wifo5-04.informatik.uni-mannheim.de/diseasome/resource/diseases/319>)
+FILTER (?t2= <http://wifo5-04.informatik.uni-mannheim.de/diseasome/resource/diseases/270> )
+}
+

@@ -1,0 +1,49 @@
+select ?na where {
+{?s1 <http://bio2rdf.org/geneid_vocabulary:has_locus_tag> ?lt1.
+?s2 <http://bio2rdf.org/geneid_vocabulary:has_locus_tag> ?lt2.
+?s3 <http://bio2rdf.org/geneid_vocabulary:has_locus_tag> ?lt3.
+?s1 <http://bio2rdf.org/geneid_vocabulary:has_taxid> ?o1.
+?s1 <http://bio2rdf.org/geneid_vocabulary:has_protein_accession> <http://bio2rdf.org/genbank:NP_001245468.1> .
+?s1 <http://bio2rdf.org/geneid_vocabulary:has_map_location> ?l1.
+?s1 <http://bio2rdf.org/geneid_vocabulary:has_nomenclature_status> ?st1.
+?s1 <http://bio2rdf.org/geneid_vocabulary:has_nomenclature_authority> ?na.
+?s2 <http://bio2rdf.org/geneid_vocabulary:has_protein_accession> <http://bio2rdf.org/genbank:NP_569936.2> .
+?s2 <http://bio2rdf.org/geneid_vocabulary:has_taxid> ?o2.
+?s2 <http://bio2rdf.org/geneid_vocabulary:has_map_location> ?l2.
+?s2 <http://bio2rdf.org/geneid_vocabulary:has_nomenclature_status> ?st2.
+?s2 <http://bio2rdf.org/geneid_vocabulary:has_nomenclature_authority> ?na.
+?s3 <http://bio2rdf.org/geneid_vocabulary:has_taxid> ?o3.
+?s3 <http://bio2rdf.org/geneid_vocabulary:has_protein_accession> <http://bio2rdf.org/refseq:386763613> .
+?s3  <http://bio2rdf.org/geneid_vocabulary:has_map_location> ?l3.
+?s3 <http://bio2rdf.org/geneid_vocabulary:has_nomenclature_status> ?st3.
+?s3 <http://bio2rdf.org/geneid_vocabulary:has_nomenclature_authority> ?na.
+FILTER (?s1!=?s2)
+FILTER (?s1!=?s3)
+FILTER (?s2!=?s3)
+}
+UNION 
+{
+?s4 <http://bio2rdf.org/geneid_vocabulary:has_locus_tag> ?lt4.
+?s5 <http://bio2rdf.org/geneid_vocabulary:has_locus_tag> ?lt5.
+?s6 <http://bio2rdf.org/geneid_vocabulary:has_locus_tag> ?lt6.
+?s4 <http://bio2rdf.org/geneid_vocabulary:has_taxid> ?o4.
+?s4 <http://bio2rdf.org/geneid_vocabulary:has_protein_accession> <http://bio2rdf.org/refseq:221329647> .
+?s4 <http://bio2rdf.org/geneid_vocabulary:has_nomenclature_authority> ?na.
+?s4 <http://bio2rdf.org/geneid_vocabulary:has_map_location> ?l4.
+?s4 <http://bio2rdf.org/geneid_vocabulary:has_nomenclature_status> ?st4.
+?s5 <http://bio2rdf.org/geneid_vocabulary:has_taxid> ?o5.
+?s5 <http://bio2rdf.org/geneid_vocabulary:has_protein_accession> <http://bio2rdf.org/genbank:AFH07182.1> .
+?s5 <http://bio2rdf.org/geneid_vocabulary:has_nomenclature_authority> ?na.
+?s5 <http://bio2rdf.org/geneid_vocabulary:has_map_location> ?l5.
+?s5 <http://bio2rdf.org/geneid_vocabulary:has_nomenclature_status> ?st5.
+?s6 <http://bio2rdf.org/geneid_vocabulary:has_taxid> ?o6.
+?s6 <http://bio2rdf.org/geneid_vocabulary:has_protein_accession> <http://bio2rdf.org/genbank:CAQ53611.1> .
+?s6 <http://bio2rdf.org/geneid_vocabulary:has_nomenclature_authority> ?na.
+?s6 <http://bio2rdf.org/geneid_vocabulary:has_map_location> ?l6.
+?s6 <http://bio2rdf.org/geneid_vocabulary:has_nomenclature_status> ?st6.
+FILTER (?s4!=?s5)
+FILTER (?s4!=?s6)
+FILTER (?s5!=?s6)
+}
+}
+ORDER BY ?na

@@ -1,0 +1,26 @@
+select distinct ?p where {
+?s1 <http://bio2rdf.org/interpro_vocabulary:contains> 'PIRSF v2.81 (3129 entries) [18-JUN-12]'.
+?s2 <http://bio2rdf.org/interpro_vocabulary:contains> 'PROSITE v20.83 (1308 entries) [13-JUN-12]'.
+?s3 <http://bio2rdf.org/interpro_vocabulary:contains> 'PRODOM v2006.1 (1894 entries) [23-APR-09]'.
+?s4 <http://bio2rdf.org/interpro_vocabulary:contains> 'PANTHER v7.2 (71246 entries) [16-MAR-12]'.
+?s1 <http://purl.org/dc/terms/rights> ?r.
+?s1 <http://purl.org/dc/terms/creator> ?c.
+?s1 <http://purl.org/dc/terms/publisher> ?p.
+?s2 <http://purl.org/dc/terms/rights> ?r.
+?s2 <http://purl.org/dc/terms/creator> ?c.
+?s2 <http://purl.org/dc/terms/publisher> ?p.
+?s3 <http://purl.org/dc/terms/rights> ?r.
+?s3 <http://purl.org/dc/terms/creator> ?c.
+?s3 <http://purl.org/dc/terms/publisher> ?p.
+?s4 <http://purl.org/dc/terms/rights> ?r.
+?s4 <http://purl.org/dc/terms/creator> ?c.
+?s4 <http://purl.org/dc/terms/publisher> ?p.
+OPTIONAL
+{?s1 <http://www.w3.org/ns/prov#wasDerivedFrom> ?df.}.
+OPTIONAL
+{ ?s2 <http://www.w3.org/ns/prov#wasDerivedFrom> ?df.}.
+OPTIONAL
+{ ?s3 <http://www.w3.org/ns/prov#wasDerivedFrom> ?df.}.
+OPTIONAL
+{ ?s4 <http://www.w3.org/ns/prov#wasDerivedFrom> ?df.}
+}

@@ -1,0 +1,77 @@
+SELECT ?t
+WHERE {  
+{     
+?geneid1 <http://bio2rdf.org/ns/bio2rdf:xTaxonomy> ?t.
+?geneid1 <http://www.w3.org/2004/02/skos/core#notation>	"104073" .
+?geneid1 <http://bio2rdf.org/ns/bio2rdf:symbol> ?s1 . 
+?geneid2 <http://bio2rdf.org/ns/bio2rdf:symbol> ?s2 .    
+?geneid2 <http://bio2rdf.org/ns/bio2rdf:xTaxonomy> ?t .
+?geneid2  <http://www.w3.org/2004/02/skos/core#notation> "100008564" . 
+?geneid3 <http://bio2rdf.org/ns/bio2rdf:symbol> ?s3 .   
+?geneid3 <http://bio2rdf.org/ns/bio2rdf:xTaxonomy> ?t .
+?geneid3  <http://www.w3.org/2004/02/skos/core#notation> "100008565" . 
+?geneid4 <http://bio2rdf.org/ns/bio2rdf:symbol> ?s4 .    
+?geneid4 <http://bio2rdf.org/ns/bio2rdf:xTaxonomy> ?t .
+?geneid4  <http://www.w3.org/2004/02/skos/core#notation> "100008567" .     
+?geneid5 <http://bio2rdf.org/ns/bio2rdf:symbol> ?s5 .  
+?geneid5 <http://bio2rdf.org/ns/bio2rdf:xTaxonomy> ?t . 
+?geneid5 <http://bio2rdf.org/ns/uniprot:xProtein> ?p5 .
+?geneid5  <http://www.w3.org/2004/02/skos/core#notation> "100008586" .
+?geneid6 <http://bio2rdf.org/ns/bio2rdf:symbol> ?s6 .    
+?geneid6 <http://bio2rdf.org/ns/uniprot:xProtein> ?p6 . 
+?geneid6 <http://bio2rdf.org/ns/bio2rdf:xTaxonomy> ?t .
+?geneid6  <http://www.w3.org/2004/02/skos/core#notation> "100008587" .
+FILTER (?geneid1!=?geneid2)
+FILTER (?geneid1!=?geneid3)
+FILTER (?geneid1!=?geneid4)
+FILTER (?geneid1!=?geneid5)
+FILTER (?geneid1!=?geneid6)
+FILTER (?geneid2!=?geneid3)
+FILTER (?geneid2!=?geneid4)
+FILTER (?geneid2!=?geneid5)
+FILTER (?geneid2!=?geneid6)
+FILTER (?geneid3!=?geneid4)
+FILTER (?geneid3!=?geneid5)
+FILTER (?geneid3!=?geneid6)
+FILTER (?geneid4!=?geneid5)
+FILTER (?geneid4!=?geneid6)
+FILTER (?geneid5!=?geneid6)
+}
+UNION
+{
+?geneid7 <http://bio2rdf.org/ns/bio2rdf:xTaxonomy> ?t . 
+?geneid7 <http://bio2rdf.org/ns/bio2rdf:symbol> ?s7 .   
+?geneid7 <http://bio2rdf.org/ns/uniprot:xProtein> <http://purl.uniprot.org/uniprot/P0CL81> .
+?geneid8 <http://bio2rdf.org/ns/bio2rdf:xTaxonomy> ?t . 
+?geneid8 <http://bio2rdf.org/ns/bio2rdf:symbol> ?s8 .    
+?geneid8 <http://bio2rdf.org/ns/uniprot:xProtein> <http://purl.uniprot.org/uniprot/P0CL82> .
+?geneid9 <http://bio2rdf.org/ns/bio2rdf:xTaxonomy> ?t .
+?geneid9 <http://bio2rdf.org/ns/bio2rdf:symbol> ?s9 .    
+?geneid9 <http://bio2rdf.org/ns/uniprot:xProtein> <http://purl.uniprot.org/uniprot/Q1WG82> .
+?geneid10 <http://bio2rdf.org/ns/bio2rdf:xTaxonomy> ?t . 
+?geneid10 <http://bio2rdf.org/ns/bio2rdf:symbol> ?s10 .    
+?geneid10 <http://www.e-lico.eu/data/kupkb/hasHomolog> <http://bio2rdf.org/geneid:100125288> .
+?geneid11 <http://bio2rdf.org/ns/bio2rdf:xTaxonomy> ?t . 
+?geneid11 <http://bio2rdf.org/ns/bio2rdf:symbol> ?s11 .    
+?geneid11 <http://www.e-lico.eu/data/kupkb/hasHomolog> <http://bio2rdf.org/geneid:286983> .
+?geneid12 <http://bio2rdf.org/ns/bio2rdf:xTaxonomy> ?t .
+?geneid12 <http://bio2rdf.org/ns/bio2rdf:symbol> ?s12 .    
+?geneid12 <http://bio2rdf.org/ns/uniprot:xProtein> <http://purl.uniprot.org/uniprot/D3Z4R7> .
+FILTER (?geneid7!=?geneid8)
+FILTER (?geneid7!=?geneid9)
+FILTER (?geneid7!=?geneid10)
+FILTER (?geneid7!=?geneid11)
+FILTER (?geneid7!=?geneid12)
+FILTER (?geneid8!=?geneid9)
+FILTER (?geneid8!=?geneid10)
+FILTER (?geneid8!=?geneid11)
+FILTER (?geneid8!=?geneid12)
+FILTER (?geneid9!=?geneid10)
+FILTER (?geneid9!=?geneid11)
+FILTER (?geneid9!=?geneid12)
+FILTER (?geneid10!=?geneid11)
+FILTER (?geneid10!=?geneid12)
+FILTER (?geneid11!=?geneid12)
+}
+}
+ORDER BY ?t

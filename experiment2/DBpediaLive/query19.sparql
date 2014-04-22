@@ -1,0 +1,20 @@
+select ?o 
+where {
+{ 
+?d1 <http://purl.org/dc/terms/subject> <http://dbpedia.org/resource/Category:Aminoglycoside_antibiotics>.
+ ?d1 <http://dbpedia.org/property/routesOfAdministration> ?o.
+ ?d1 <http://dbpedia.org/ontology/chEBI> ?c1.
+ ?d1 <http://dbpedia.org/property/proteinBound> ?p1.
+ ?d1 <http://dbpedia.org/property/routesOfAdministration> ?o.
+}
+UNION
+{
+?d2 <http://purl.org/dc/terms/subject> <http://dbpedia.org/resource/Category:Toxicology>.
+?d2 <http://dbpedia.org/property/routesOfAdministration> ?o.
+ ?d2 <http://dbpedia.org/ontology/chEBI> ?c2.
+ ?d2 <http://dbpedia.org/property/proteinBound> ?p2.
+ ?d2 <http://dbpedia.org/property/routesOfAdministration> ?o.
+}
+FILTER (?d1 != ?d2)
+}
+ORDER BY ?o                 

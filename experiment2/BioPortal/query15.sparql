@@ -1,0 +1,8 @@
+SELECT ?version ?name ?creation WHERE { 
+       ?version <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://omv.ontoware.org/2005/05/ontology#Ontology> .
+       ?version  <http://omv.ontoware.org/2005/05/ontology#name> ?name .
+       ?version  <http://bioportal.bioontology.org/metadata/def/timestampCreation> ?creation .
+       FILTER (<http://www.w3.org/2001/XMLSchema#dateTime>(?creation) > "2012-01-01T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime>)
+} 
+ORDER BY ?name
+LIMIT 10

@@ -1,0 +1,8 @@
+SELECT ?s ?designation 
+WHERE {
+    ?s <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ihtsdo.org/snomedct/anatomy#36528006>.
+    ?s <http://www.w3.org/2004/02/skos/core#prefLabel> ?designation .
+    FILTER (isIRI(?s))		
+		} 
+LIMIT  51
+OFFSET 0

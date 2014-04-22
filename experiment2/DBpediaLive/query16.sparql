@@ -1,0 +1,14 @@
+select distinct *
+where {
+{?p <http://dbpedia.org/property/currentMembers> <http://dbpedia.org/resource/Gustavo_Dudamel>.
+?p <http://dbpedia.org/property/occupation> ?o1.
+OPTIONAL
+{
+ ?p <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Band>
+ ?p <http://dbpedia.org/ontology/background> ?b1
+}
+}.
+?p1 <http://dbpedia.org/property/occupation> ?o1.
+?p1 <http://dbpedia.org/property/type> ?t1.
+?p1 <http://xmlns.com/foaf/0.1/primaryTopic> ?pt1
+}

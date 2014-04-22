@@ -1,0 +1,28 @@
+SELECT ?t
+WHERE {  
+{    
+?geneid1 <http://bio2rdf.org/ns/bio2rdf:xTaxonomy> ?t.
+?geneid1 <http://www.w3.org/2004/02/skos/core#notation>	"104073" .    
+?geneid2 <http://bio2rdf.org/ns/bio2rdf:xTaxonomy> ?t .
+?geneid2  <http://www.w3.org/2004/02/skos/core#notation> "100008564" .   
+?geneid3 <http://bio2rdf.org/ns/bio2rdf:xTaxonomy> ?t .
+?geneid3  <http://www.w3.org/2004/02/skos/core#notation> "100009609" .
+FILTER (?geneid1!=?geneid2)
+FILTER (?geneid1!=?geneid3)
+FILTER (?geneid2!=?geneid3)
+}
+UNION
+{     
+?geneid4 <http://bio2rdf.org/ns/bio2rdf:xTaxonomy> ?t .
+?geneid4  <http://www.w3.org/2004/02/skos/core#notation> "100008567" .        
+?geneid5  <http://www.w3.org/2004/02/skos/core#notation> "100008586" . 
+?geneid5 <http://bio2rdf.org/ns/bio2rdf:xTaxonomy> ?t .     
+?geneid6  <http://www.w3.org/2004/02/skos/core#notation> "100008587" .
+?geneid6 <http://bio2rdf.org/ns/bio2rdf:xTaxonomy> ?t .
+FILTER (?geneid4!=?geneid5)
+FILTER (?geneid4!=?geneid6)
+FILTER (?geneid5!=?geneid6)
+}
+}
+ORDER BY ?t
+LIMIT 100

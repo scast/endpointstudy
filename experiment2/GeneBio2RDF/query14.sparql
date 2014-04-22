@@ -1,0 +1,43 @@
+select ?pubmed where {
+{
+?s1 <http://bio2rdf.org/geneid_vocabulary:has_locus_tag>  ?h1.
+?s1 <http://bio2rdf.org/geneid_vocabulary:has_taxid> ?t1.
+?s1 <http://bio2rdf.org/geneid_vocabulary:has_protein_accession> ?l1.
+?s1 <http://bio2rdf.org/geneid_vocabulary:has_genomic_nucleotide_gi> ?st1.
+?s1 <http://bio2rdf.org/geneid_vocabulary:has_genomic_nucleotide_accession> ?na1.
+?s1 <http://bio2rdf.org/geneid_vocabulary:has_pubmed_id> ?pubmed.
+FILTER (?h1='BUAPTUC7_531')
+}
+UNION
+{
+?s2 <http://bio2rdf.org/geneid_vocabulary:has_locus_tag> ?h2.
+?s2 <http://bio2rdf.org/geneid_vocabulary:has_taxid> ?t2.
+?s2 <http://bio2rdf.org/geneid_vocabulary:has_protein_accession> ?l2.
+?s2 <http://bio2rdf.org/geneid_vocabulary:has_genomic_nucleotide_gi> ?st2.
+?s2 <http://bio2rdf.org/geneid_vocabulary:has_genomic_nucleotide_accession> ?na2.
+?s2 <http://bio2rdf.org/geneid_vocabulary:has_pubmed_id> ?pubmed.
+FILTER (?h2='BUAPTUC7_535')
+}
+UNION
+{
+?s3 <http://bio2rdf.org/geneid_vocabulary:has_locus_tag> ?h3.
+?s3 <http://bio2rdf.org/geneid_vocabulary:has_taxid> ?t3.
+?s3  <http://bio2rdf.org/geneid_vocabulary:has_protein_accession> ?l3.
+?s3 <http://bio2rdf.org/geneid_vocabulary:has_genomic_nucleotide_gi> ?st3.
+?s3 <http://bio2rdf.org/geneid_vocabulary:has_genomic_nucleotide_accession> ?na3.
+?s3 <http://bio2rdf.org/geneid_vocabulary:has_pubmed_id> ?pubmed.
+FILTER (?h3=''BUAPTUC7_540')
+
+}
+UNION
+{
+?s4 <http://bio2rdf.org/geneid_vocabulary:has_locus_tag> ?h4.
+?s4 <http://bio2rdf.org/geneid_vocabulary:has_taxid> ?t4.
+?s4 <http://bio2rdf.org/geneid_vocabulary:has_protein_accession> ?na4.
+?s4 <http://bio2rdf.org/geneid_vocabulary:has_genomic_nucleotide_gi> ?l4.
+?s4 <http://bio2rdf.org/geneid_vocabulary:has_genomic_nucleotide_accession> ?st4.
+?s4 <http://bio2rdf.org/geneid_vocabulary:has_pubmed_id> ?pubmed.
+FILTER (?h4='BUAPTUC7_570')
+}
+}
+ORDER BY ?pubmed

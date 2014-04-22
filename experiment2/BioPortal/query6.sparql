@@ -1,0 +1,7 @@
+SELECT DISTINCT ?property ?hasValue ?isValueOf
+WHERE {
+  { <http://bioportal.bioontology.org/ontologies/47087> ?property ?hasValue }
+  UNION
+  { ?isValueOf ?property <http://bioportal.bioontology.org/ontologies/47087> }
+}
+LIMIT 1000
