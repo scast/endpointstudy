@@ -4,7 +4,6 @@ select ?l where {
 ?s2 <http://www.w3.org/2004/02/skos/core#closeMatch> <http://d-nb.info/gnd/4255907-8>.
 ?s1 <http://www.w3.org/2004/02/skos/core#altLabel> ?l.
 ?s2 <http://www.w3.org/2004/02/skos/core#altLabel> ?l.
-FILTER (?s1!=?s2)
 }
 OPTIONAL
 {
@@ -20,7 +19,6 @@ FILTER (?s3!=?s4)
 ?s9 <http://www.w3.org/2004/02/skos/core#broader> <http://id.sgcb.mcu.es/Autoridades/LEM201007130/concept> .
 ?s8 <http://www.w3.org/2004/02/skos/core#altLabel> ?l.
 ?s9 <http://www.w3.org/2004/02/skos/core#altLabel> ?l.
-FILTER (?s8!=?s9)
 }
 OPTIONAL
 {

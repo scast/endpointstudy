@@ -6,7 +6,6 @@ select distinct ?l where {
 ?s4 <http://www.w3.org/2004/02/skos/core#altLabel> ?l.
 ?s3 <http://purl.org/dc/terms/modified> ?m3.
 ?s4 <http://purl.org/dc/terms/modified> ?m4.
-FILTER (?s3!=?s4)
 }
 UNION
 {
@@ -34,7 +33,6 @@ UNION
 ?s9 <http://www.w3.org/2004/02/skos/core#altLabel> ?l.
 ?s8 <http://purl.org/dc/terms/modified> ?m8 .
 ?s9 <http://purl.org/dc/terms/modified> ?m9 .
-FILTER (?s8!=?s9)
 }
 }
 ORDER BY ?l

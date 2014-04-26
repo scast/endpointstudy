@@ -4,7 +4,6 @@ select distinct ?l where {
 ?s4 <http://www.w3.org/2004/02/skos/core#closeMatch> <http://data.bnf.fr/ark:/12148/cb119563125>.
 ?s3 <http://www.w3.org/2004/02/skos/core#altLabel> ?l.
 ?s4 <http://www.w3.org/2004/02/skos/core#altLabel> ?l.
-FILTER (?s3!=?s4)
 }
 UNION
 {
@@ -12,7 +11,6 @@ UNION
 ?s6 <http://www.w3.org/2004/02/skos/core#related> <http://id.sgcb.mcu.es/Autoridades/LEM201011996/concept>.
 ?s5 <http://www.w3.org/2004/02/skos/core#altLabel> ?l.
 ?s6 <http://www.w3.org/2004/02/skos/core#altLabel> ?l.
-FILTER (?s5!=?s6)
 }
 .
 {

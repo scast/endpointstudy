@@ -22,11 +22,7 @@ where {
 ?o3 <http://bio2rdf.org/pubmed_vocabulary:initials> ?h.
 ?s3 <http://purl.org/dc/terms/title> ?t3.
 FILTER (?s1!=?s2)
-FILTER (?s1!=?s3)
-FILTER (?s2!=?s3)
 FILTER (?o1!=?o2)
-FILTER (?o1!=?o3)
-FILTER (?o2!=?o3)
 }
 ORDER BY ?pm
 LIMIT 10

@@ -19,8 +19,6 @@ where {
 ?s3 <http://www.openlinksw.com/schemas/xbrl/from> ?f3 .
 ?s3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?pl3 .
 FILTER (?s1!=?s2)
-FILTER (?s1!=?s3)
-FILTER (?s2!=?s3)
 OPTIONAL
 {
 ?s4 <http://www.openlinksw.com/schemas/xbrl/role>  "http://xbrl.iasb.org/int/fr/ifrs/gp/role/CashFlowIndirectFinancialInstitutions" .

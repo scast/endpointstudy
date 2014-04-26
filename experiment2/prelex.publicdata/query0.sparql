@@ -36,10 +36,6 @@ select distinct ?bc where {
 ?s4 <http://epo.publicdata.eu/ebd/ontology/placeOfApplication> ?poa4 .
 ?s4 <http://epo.publicdata.eu/ebd/ontology/publishedDate> ?pd4 .
 FILTER(?s1!=?s2)
-FILTER(?s1!=?s3)
-FILTER(?s1!=?s4)
-FILTER(?s2!=?s3)
-FILTER(?s1!=?s4)
 FILTER(?s3!=?s4)
 }
 ORDER BY ?bc

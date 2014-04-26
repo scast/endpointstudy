@@ -25,14 +25,7 @@ select ?d where {
 ?s5 <http://bio2rdf.org/interpro_vocabulary:x-scop> ?xs5.
 ?s5 <http://bio2rdf.org/interpro_vocabulary:x-pubmed> ?xp5.
 FILTER (?s1!=?s2)
-FILTER (?s1!=?s3)
-FILTER (?s1!=?s4)
-FILTER (?s1!=?s5)
-FILTER (?s2!=?s3)
-FILTER (?s2!=?s4)
-FILTER (?s2!=?s5)
 FILTER (?s3!=?s4)
-FILTER (?s3!=?s5)
 FILTER (?s4!=?s5)
 }
 ORDER BY ?d

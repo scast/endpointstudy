@@ -26,7 +26,7 @@ UNION
 ?s3 <http://bio2rdf.org/geneid_vocabulary:has_genomic_nucleotide_gi> ?st3.
 ?s3 <http://bio2rdf.org/geneid_vocabulary:has_genomic_nucleotide_accession> ?na3.
 ?s3 <http://bio2rdf.org/geneid_vocabulary:has_pubmed_id> ?pubmed.
-FILTER (?h3=''BUAPTUC7_540')
+FILTER (?h3='BUAPTUC7_540')
 
 }
 UNION

@@ -36,13 +36,7 @@ OPTIONAL
   ?d4 <http://bio2rdf.org/drugbank_vocabulary:synonym> ?s4.
 }
 }
-}
 FILTER (?d1!=?d2)
-FILTER (?d1!=?d3)
-FILTER (?d1!=?d4)
-FILTER (?d2!=?d3)
-FILTER (?d2!=?d4)
-FILTER (?d3!=?d4)
 }
 ORDER BY ?b
 LIMIT 10

@@ -9,14 +9,14 @@ WHERE {
 ?geneid2  <http://www.w3.org/2004/02/skos/core#notation> "100008564" . 
 ?geneid3 <http://bio2rdf.org/ns/bio2rdf:symbol> ?s3 .   
 ?geneid3 <http://bio2rdf.org/ns/bio2rdf:xTaxonomy> ?t .
-?geneid3  <http://www.w3.org/2004/02/skos/core#notation> "100008565" .. 
+?geneid3  <http://www.w3.org/2004/02/skos/core#notation> "100008565" . 
 ?geneid4 <http://bio2rdf.org/ns/bio2rdf:symbol> ?s4 .    
 ?geneid4 <http://bio2rdf.org/ns/bio2rdf:xTaxonomy> ?t .
-?geneid4  <http://www.w3.org/2004/02/skos/core#notation> "100008567" .    . 
+?geneid4  <http://www.w3.org/2004/02/skos/core#notation> "100008567" . 
 ?geneid5 <http://bio2rdf.org/ns/bio2rdf:symbol> ?s5 .  
 ?geneid5 <http://bio2rdf.org/ns/bio2rdf:xTaxonomy> ?t . 
 ?geneid5 <http://bio2rdf.org/ns/uniprot:xProtein> ?p5 .
-?geneid5  <http://www.w3.org/2004/02/skos/core#notation> "100008586" .. 
+?geneid5  <http://www.w3.org/2004/02/skos/core#notation> "100008586" . 
 ?geneid6 <http://bio2rdf.org/ns/bio2rdf:symbol> ?s6 .    
 ?geneid6 <http://bio2rdf.org/ns/uniprot:xProtein> ?p6 . 
 ?geneid6 <http://bio2rdf.org/ns/bio2rdf:xTaxonomy> ?t .

@@ -29,21 +29,6 @@ UNION
 ?s4 <http://www.openlinksw.com/schemas/xbrl/from> ?f4 .
 ?s4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?pl4 .
 }
-UNION
-{
-?s5 <http://www.openlinksw.com/schemas/xbrl/role>  "http://xbrl.iasb.org/int/fr/ifrs/gp/role/AccountingPolicies" .
-?s5 <http://www.openlinksw.com/schemas/xbrl/order> ?o5.
-?s5 <http://www.openlinksw.com/schemas/xbrl/weight> ?w.
-?s5 <http://www.openlinksw.com/schemas/xbrl/to> ?t5 .
-?s5 <http://www.openlinksw.com/schemas/xbrl/from> ?f5 .
-?s5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?pl5 .
-?s6 <http://www.openlinksw.com/schemas/xbrl/role>  "http://xbrl.iasb.org/int/fr/ifrs/gp/role/TuplesAmountToAggregate" .
-?s6 <http://www.openlinksw.com/schemas/xbrl/order> ?o6.
-?s6 <http://www.openlinksw.com/schemas/xbrl/weight> ?w.
-?s6 <http://www.openlinksw.com/schemas/xbrl/to> ?t6 .
-?s6 <http://www.openlinksw.com/schemas/xbrl/from> ?f6 .
-?s6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?pl6
-}
 }
 ORDER BY ?w
 LIMIT 100

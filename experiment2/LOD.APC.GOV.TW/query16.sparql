@@ -7,12 +7,6 @@ select ?o1 ?o2 where {
 ?s4 <http://lod.apc.gov.tw:8890/schemas/Contest/neighborhood> ?o2.
 ?s3 <http://lod.apc.gov.tw:8890/schemas/Contest/neighborhood> ?o21.
 ?s4 <http://lod.apc.gov.tw:8890/schemas/Contest/id>  '5'.
-FILTER (?s1!=?s2)
-FILTER (?s1!=?s3)
-FILTER (?s1!=?s4)
-FILTER (?s2!=?s3)
-FILTER (?s2!=?s4)
-FILTER (?s3!=?s4)
 FILTER (?o1=?o11)
 FILTER (?o2=?o21)
 }

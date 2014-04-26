@@ -11,14 +11,10 @@ select ?t where {
 ?s2 <http://lod.apc.gov.tw:8890/schemas/Contest/ethnic_of> <http://lod.apc.gov.tw:8890/Contest/tribeapproved/ID/478#this>.
 ?s3 <http://lod.apc.gov.tw:8890/schemas/Contest/ethnic_of> <http://lod.apc.gov.tw:8890/Contest/tribeapproved/ID/68#this>.
 ?s4 <http://lod.apc.gov.tw:8890/schemas/Contest/ethnic_of> <http://lod.apc.gov.tw:8890/Contest/tribeapproved/ID/84#this>.
-FILTER (?s1!=?s2)
-FILTER (?s1!=?s3)
-FILTER (?s1!=?s4)
-FILTER (?s2!=?s3)
-FILTER (?s2!=?s4)
-FILTER (?s3!=?s4)
+FILTER (?s1=?s2)
+FILTER (?s3=?s4)
 }
 ORDER BY ?t
-LIMIT 100
-OFFSET 100
+LIMIT 10
+OFFSET 0
 

@@ -26,9 +26,6 @@ select distinct ?bc where {
 ?s3 <http://epo.publicdata.eu/ebd/ontology/hasPreviousChange> ?hpc3 .
 ?s3 <http://epo.publicdata.eu/ebd/ontology/placeOfApplication> ?poa3 .
 ?s3 <http://epo.publicdata.eu/ebd/ontology/publishedDate> ?pd3 .
-FILTER(?s1!=?s2)
-FILTER(?s1!=?s3)
-FILTER(?s2!=?s3)
 FILTER (?t1=<http://epo.publicdata.eu/ebd/ontology/ApplicationStatusReplace>)
 FILTER (?t2=<http://epo.publicdata.eu/ebd/ontology/ApplicationStatusReplace>)
 FILTER (?t3=<http://epo.publicdata.eu/ebd/ontology/ApplicationStatusReplace> )

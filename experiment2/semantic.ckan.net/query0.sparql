@@ -4,18 +4,14 @@ select ?d where {
 ?s3 <http://www.w3.org/ns/dcat#keyword> "published-by-third-party" .
 ?s4 <http://www.w3.org/ns/dcat#keyword> "format-owl" .
 ?s1 <http://www.w3.org/ns/dcat#distribution> ?d .
-?s2 <http://www.w3.org/ns/dcat#distribution> ?d .
-?s3 <http://www.w3.org/ns/dcat#distribution> ?d .
-?s4 <http://www.w3.org/ns/dcat#distribution> ?d .
+?s2 <http://www.w3.org/ns/dcat#distribution> ?d2 .
+?s3 <http://www.w3.org/ns/dcat#distribution> ?d3 .
+?s4 <http://www.w3.org/ns/dcat#distribution> ?d4 .
 ?s1 <http://purl.org/dc/terms/contributor> ?ct1 .
 ?s2 <http://purl.org/dc/terms/contributor> ?ct2 .
 ?s3 <http://purl.org/dc/terms/contributor> ?ct3 .
 ?s4 <http://purl.org/dc/terms/contributor> ?ct4 .
-FILTER (?s1!=?s2)
-FILTER (?s1!=?s3)
-FILTER (?s1!=?s4)
-FILTER (?s2!=?s3)
-FILTER (?s2!=?s4)
-FILTER (?s3!=?s4)
+FILTER (?d=?d2)
+FILTER (?d!=?d3)
 }
 ORDER BY ?d

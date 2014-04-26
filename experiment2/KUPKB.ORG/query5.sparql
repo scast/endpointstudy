@@ -13,6 +13,7 @@ UNION
 ?geneid4 <http://bio2rdf.org/ns/bio2rdf:symbol> ?genesymbol .     
 ?geneid4 <http://bio2rdf.org/ns/bio2rdf:xTaxonomy> <http://bio2rdf.org/taxon:9606> .
 }
+UNION
 {   
 ?geneid9 <http://bio2rdf.org/ns/bio2rdf:symbol> ?genesymbol .     
 ?geneid9 <http://bio2rdf.org/ns/bio2rdf:xTaxonomy> <http://bio2rdf.org/taxon:10090> . 

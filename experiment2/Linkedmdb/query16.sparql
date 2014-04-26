@@ -1,6 +1,6 @@
 SELECT ?d1 WHERE {
 ?d1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?d11.
-?d1 <http://data.linkedmdb.org/resource/movie/directorid> ?id.
+?d1 <http://data.linkedmdb.org/resource/movie/director_directorid> ?id.
 ?m1 <http://data.linkedmdb.org/resource/movie/director> ?d1.
 ?m1 <http://data.linkedmdb.org/resource/movie/rating> ?d12.
 ?m1 <http://data.linkedmdb.org/resource/movie/actor> ?a1.

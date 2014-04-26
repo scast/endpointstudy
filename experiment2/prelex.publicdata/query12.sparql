@@ -27,8 +27,6 @@ select ?bc where {
 ?s3 <http://epo.publicdata.eu/ebd/ontology/placeOfApplication> ?poa3 .
 ?s3 <http://epo.publicdata.eu/ebd/ontology/publishedDate> ?pd3 .
 FILTER(?s1!=?s2)
-FILTER(?s1!=?s3)
-FILTER(?s2!=?s3)
 }
 LIMIT 10
 OFFSET 10

@@ -19,6 +19,5 @@ OPTIONAL
 }
 FILTER (?c1=<http://bio2rdf.org/uniprot:G3V801>)
 FILTER (?c2=<http://bio2rdf.org/uniprot:P06869>)
-FILTER (?s1!=?s2)
 }
 ORDER BY ?d

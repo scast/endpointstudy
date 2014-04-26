@@ -5,8 +5,6 @@ select ?l where {
 ?s4 <http://www.w3.org/2004/02/skos/core#scopeNote> ?l.
 ?s5 <http://www.w3.org/2004/02/skos/core#closeMatch> <http://d-nb.info/gnd/4130241-2>.
 ?s5 <http://www.w3.org/2004/02/skos/core#scopeNote> ?l.
-FILTER (?s3!=?s4)
-FILTER (?s3!=?s5)
 FILTER (?s4!=?s5)
 }
 ORDER BY ?l

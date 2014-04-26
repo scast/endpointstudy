@@ -15,7 +15,7 @@ FILTER (?o11=?o1)
 UNION
 {
 ?s2  <http://bio2rdf.org/pubmed_vocabulary:publication_type> 'EvaluationStudies'.
-?s2 <http://bio2rdf.org/pubmed_vocabulary:author> ?o21.
+?s2 <http://bio2rdf.org/pubmed_vocabulary:author> ?o2.
 ?s2 <http://purl.org/dc/terms/abstract> ?ab2.
 ?s2 <http://bio2rdf.org/pubmed_vocabulary:owner> ?ow2.
 ?s2 <http://purl.org/dc/terms/identifier> ?i2.
@@ -23,6 +23,5 @@ UNION
 ?o2 <http://bio2rdf.org/pubmed_vocabulary:last_name> ?ln2.
 ?o2 <http://bio2rdf.org/pubmed_vocabulary:fore_name> ?f2.
 ?o2 <http://bio2rdf.org/pubmed_vocabulary:initials> ?h2.
-FILTER (?o21=?o2)
 }}
 ORDER BY ?pm

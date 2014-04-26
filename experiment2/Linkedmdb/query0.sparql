@@ -3,7 +3,7 @@ SELECT ?p WHERE {
 ?o1 <http://data.linkedmdb.org/resource/movie/film_genre_name> "Cult".
 ?m2 <http://data.linkedmdb.org/resource/movie/rating> <http://data.linkedmdb.org/resource/content_rating/11>.
 ?m1 <http://data.linkedmdb.org/resource/movie/producer> ?p.
-?m2 <http://data.linkedmdb.org/resource/movie/producer> ?p.
-FILTER (?m1!=?m2)
+?m2 <http://data.linkedmdb.org/resource/movie/producer> ?p2.
+FILTER (?p=?p2)
 }
 ORDER BY ?p

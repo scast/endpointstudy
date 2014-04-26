@@ -1,12 +1,13 @@
-SELECT DISTINCT ?s ?formalName ?description ?id ?ontologyId ?acronym  
+SELECT DISTINCT ?s ?formalName ?description ?id1 ?id2 ?ontologyId ?acronym  
 WHERE {
-	   ?s <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://omv.ontoware.org/2005/05/ontology#Ontology> .
-	   ?s <http://omv.ontoware.org/2005/05/ontology#acronym> ?acronym .
-	   ?s <http://omv.ontoware.org/2005/05/ontology#name> ?formalName .
-	   ?s <http://bioportal.bioontology.org/metadata/def/id> ?id .
-	   ?s <http://omv.ontoware.org/2005/05/ontology#description> ?description .
-	   ?s <http://bioportal.bioontology.org/metadata/def/isVersionOfVirtualOntology> ?ontologyId .
-	   ?ontologyId <http://bioportal.bioontology.org/metadata/def/id> ?virtualId .
-	   ?ontologyId <http://bioportal.bioontology.org/metadata/def/id> 3006 .}
+           ?s <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://omv.ontoware.org/2005/05/ontology#Ontology> .
+           ?s <http://omv.ontoware.org/2005/05/ontology#acronym> ?acronym .
+           ?s <http://omv.ontoware.org/2005/05/ontology#name> ?formalName .
+           ?s <http://bioportal.bioontology.org/metadata/def/id> ?id1 .
+           ?s <http://omv.ontoware.org/2005/05/ontology#description> ?description .
+           ?s <http://bioportal.bioontology.org/metadata/def/isVersionOfVirtualOntology> ?ontologyId .
+           ?ontologyId <http://bioportal.bioontology.org/metadata/def/id> ?virtualId .
+           ?ontologyId <http://bioportal.bioontology.org/metadata/def/id> ?id2 .
+           FILTER (?ontologyId=<http://bioportal.bioontology.org/ontologies/3006>)}
 	   LIMIT  51
 	   OFFSET 0

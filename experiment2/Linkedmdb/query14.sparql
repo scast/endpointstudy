@@ -1,16 +1,16 @@
-SELECT ?a WHERE {
+SELECT ?t1 WHERE {
 ?m11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://data.linkedmdb.org/resource/movie/writer>.
 ?t1 <http://data.linkedmdb.org/resource/movie/writer> ?m1.
 FILTER (?m11=?m1)
 OPTIONAL {
 ?t1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://data.linkedmdb.org/resource/movie/film>.
 ?t1 <http://data.linkedmdb.org/resource/movie/genre> ?o11.
-?o1 <http://data.linkedmdb.org/resource/movie/film_genre_name> "Cult".
+?o1 <http://data.linkedmdb.org/resource/movie/film_genre_name> "Teen".
 ?t1 <http://data.linkedmdb.org/resource/movie/actor> ?a.
 FILTER (?o11=?o1)
 }
 }
-ORDER BY ?a
+ORDER BY ?t1
 LIMIT 100
 OFFSET 100
 

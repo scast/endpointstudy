@@ -6,7 +6,7 @@ select ?t where {
 ?s2 <http://lod.apc.gov.tw:8890/schemas/Contest/region> ?o2.
 ?s1 <http://lod.apc.gov.tw:8890/schemas/Contest/ethnic_of> <http://lod.apc.gov.tw:8890/Contest/tribeapproved/ID/282#this>.
 ?s2 <http://lod.apc.gov.tw:8890/schemas/Contest/ethnic_of> <http://lod.apc.gov.tw:8890/Contest/tribeapproved/ID/478#this>.
-FILTER (?s1!=?s2)
+FILTER (?o1=?o2)
 }
 UNION
 {
@@ -17,9 +17,9 @@ UNION
 ?s4 <http://lod.apc.gov.tw:8890/schemas/Contest/traditioneconomicactivity> ?ea4.
 ?s3 <http://lod.apc.gov.tw:8890/schemas/Contest/ethnic_of> <http://lod.apc.gov.tw:8890/Contest/tribeapproved/ID/68#this>.
 ?s4 <http://lod.apc.gov.tw:8890/schemas/Contest/ethnic_of> <http://lod.apc.gov.tw:8890/Contest/tribeapproved/ID/84#this>.
-FILTER (?s3!=?s4)
+FILTER (?o3=?o4)
 }
 }
 ORDER BY ?t
-LIMIT 100
-OFFSET 100
+LIMIT 1
+OFFSET 0

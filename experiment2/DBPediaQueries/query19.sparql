@@ -1,7 +1,7 @@
 select distinct *
 where {
 ?d1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?t1 .
-?d2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> .
+?d2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?t2.
 ?d1 <http://dbpedia.org/property/emedicinetopic> ?o11.
 ?d2 <http://dbpedia.org/property/emedicinetopic> ?o12.
 ?d1 <http://dbpedia.org/ontology/medlineplus> ?m1.

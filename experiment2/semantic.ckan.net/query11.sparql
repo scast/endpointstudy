@@ -12,13 +12,10 @@ select ?ct where {
 ?s4 <http://xmlns.com/foaf/0.1/homepage> ?h4.
 ?s4 <http://purl.org/dc/terms/relation> ?r4 .
 ?s1 <http://purl.org/dc/terms/contributor> ?ct .
-?s2 <http://purl.org/dc/terms/contributor> ?ct .
-?s3 <http://purl.org/dc/terms/contributor> ?ct .
-?s4 <http://purl.org/dc/terms/contributor> ?ct .
-FILTER (?s1!=?s2)
-FILTER (?s1!=?s3)
-FILTER (?s1!=?s4)
-FILTER (?s2!=?s3)
-FILTER (?s2!=?s4)
-FILTER (?s3!=?s4)
+?s2 <http://purl.org/dc/terms/contributor> ?ct1 .
+?s3 <http://purl.org/dc/terms/contributor> ?ct2 .
+?s4 <http://purl.org/dc/terms/contributor> ?ct3 .
+FILTER (?ct=?ct2)
+FILTER (?ct=?ct3)
+FILTER (?ct=?ct4)
 }

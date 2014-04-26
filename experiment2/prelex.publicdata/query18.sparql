@@ -20,7 +20,6 @@ select ?has where {
 ?s2 <http://epo.publicdata.eu/ebd/ontology/publishedDate> ?pd2 .
 FILTER (?ap1=<http://epo.publicdata.eu/ebd/ontology/applicationPlace/09> )
 FILTER (?ap2=<http://epo.publicdata.eu/ebd/ontology/applicationPlace/10>)
-FILTER (?ap1 != ?ap2)
 }
 UNION
 {
@@ -44,7 +43,6 @@ UNION
 ?s4 <http://epo.publicdata.eu/ebd/ontology/publishedDate> ?pd4 .
 FILTER (?ap3=<http://epo.publicdata.eu/ebd/ontology/applicationPlace/09> )
 FILTER (?ap4=<http://epo.publicdata.eu/ebd/ontology/applicationPlace/10>)
-FILTER (?ap3 != ?ap4)
 }
 UNION
 {
@@ -68,7 +66,6 @@ UNION
 ?s6 <http://epo.publicdata.eu/ebd/ontology/publishedDate> ?pd6 .
 FILTER (?ap5=<http://epo.publicdata.eu/ebd/ontology/applicationPlace/09> )
 FILTER (?ap6=<http://epo.publicdata.eu/ebd/ontology/applicationPlace/10>)
-FILTER (?ap5 != ?ap6)
 }
 }
 ORDER BY ?has

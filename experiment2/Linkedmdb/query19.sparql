@@ -8,6 +8,6 @@ FILTER (?t1=<http://data.linkedmdb.org/resource/movie/actor>)
 FILTER (?t2=<http://data.linkedmdb.org/resource/content_rating/3> )
 }
 ORDER BY ?d1
-LIMIT 100
-OFFSET 100
+LIMIT 10
+OFFSET 10
 

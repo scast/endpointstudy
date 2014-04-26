@@ -28,10 +28,6 @@ select ?cn where {
 ?s3 <http://purl.org/dc/terms/title> ?t3.
 ?s4 <http://purl.org/dc/terms/title> ?t4.
 FILTER (?s1!=?s2)
-FILTER (?s1!=?s3)
-FILTER (?s1!=?s4)
-FILTER (?s2!=?s3)
-FILTER (?s2!=?s4)
 FILTER (?s3!=?s4)
 OPTIONAL
 {

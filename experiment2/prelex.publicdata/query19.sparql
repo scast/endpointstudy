@@ -20,7 +20,6 @@ select * where {
 ?s2 <http://epo.publicdata.eu/ebd/ontology/placeOfApplication>  ?pa2 .
 ?s2 <http://epo.publicdata.eu/ebd/ontology/publishedDate> ?pd2 .
 ?s2 <http://epo.publicdata.eu/ebd/ontology/hasInvolvedCountry> <http://epo.publicdata.eu/ebd/ontology/country/BE> .
-FILTER (?s1!=?s2)
 }
 UNION
 {
@@ -44,7 +43,6 @@ UNION
 ?s4 <http://epo.publicdata.eu/ebd/ontology/placeOfApplication> ?pa4 .
 ?s4 <http://epo.publicdata.eu/ebd/ontology/publishedDate> ?pd4 .
 ?s4 <http://epo.publicdata.eu/ebd/ontology/hasInvolvedCountry> <http://epo.publicdata.eu/ebd/ontology/country/CY> .
-FILTER (?s3!=?s4)
 }
 UNION
 {

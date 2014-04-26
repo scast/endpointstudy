@@ -37,7 +37,6 @@ OPTIONAL
 }
 }
 }
-}
 ORDER BY ?b
 LIMIT 10
 OFFSET 10

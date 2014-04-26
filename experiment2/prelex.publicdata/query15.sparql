@@ -27,9 +27,6 @@ select ?bc where {
 ?s3 <http://epo.publicdata.eu/ebd/ontology/hasPreviousChange> ?hpc3 .
 ?s3 <http://epo.publicdata.eu/ebd/ontology/placeOfApplication> ?poa3 .
 ?s3 <http://epo.publicdata.eu/ebd/ontology/publishedDate> ?pd3 .
-FILTER(?s1!=?s2)
-FILTER(?s1!=?s3)
-FILTER(?s2!=?s3)
 FILTER (?t1=<http://epo.publicdata.eu/ebd/ontology/ApplicationStatusReplace>)
 FILTER (?t2=<http://epo.publicdata.eu/ebd/ontology/ApplicationStatusReplace>)
 FILTER (?t3=<http://epo.publicdata.eu/ebd/ontology/ApplicationStatusReplace> )
@@ -63,9 +60,6 @@ UNION
 ?s6 <http://epo.publicdata.eu/ebd/ontology/hasPreviousChange> ?hpc6 .
 ?s6 <http://epo.publicdata.eu/ebd/ontology/placeOfApplication> ?poa6 .
 ?s6 <http://epo.publicdata.eu/ebd/ontology/publishedDate> ?pd6 .
-FILTER(?s4!=?s5)
-FILTER(?s4!=?s6)
-FILTER(?s5!=?s6)
 FILTER (?t4=<http://epo.publicdata.eu/ebd/ontology/ApplicationStatusReplace>)
 FILTER (?t5=<http://epo.publicdata.eu/ebd/ontology/ApplicationStatusReplace>)
 FILTER (?t6=<http://epo.publicdata.eu/ebd/ontology/ApplicationStatusReplace> )

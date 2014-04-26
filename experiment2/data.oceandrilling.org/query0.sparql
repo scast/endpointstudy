@@ -19,7 +19,5 @@ where {
 ?s2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?pl2 .
 ?s3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?pl3 .
 FILTER (?s1!=?s2)
-FILTER (?s1!=?s3)
-FILTER (?s2!=?s3)
 }
 ORDER BY ?o

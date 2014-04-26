@@ -21,11 +21,7 @@ OPTIONAL
 {?s3 <http://lod.apc.gov.tw:8890/schemas/Contest/aboriginalpopulation> ?ap3.}.
 OPTIONAL
 {?s4 <http://lod.apc.gov.tw:8890/schemas/Contest/aboriginalpopulation> ?ap4.}
-FILTER (?s1!=?s2)
-FILTER (?s1!=?s3)
-FILTER (?s1!=?s4)
-FILTER (?s2!=?s3)
-FILTER (?s2!=?s4)
-FILTER (?s3!=?s4)
+FILTER (?o1=?o2)
+FILTER (?o3=?o4)
 }
 ORDER BY ?t

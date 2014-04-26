@@ -9,16 +9,7 @@ select ?l where {
 ?s6 <http://www.w3.org/2004/02/skos/core#related> <http://id.sgcb.mcu.es/Autoridades/LEM201002309/concept>.
 ?s5 <http://www.w3.org/2004/02/skos/core#altLabel> ?l.
 ?s6 <http://www.w3.org/2004/02/skos/core#altLabel> ?l.
-FILTER (?s1!=?s2)
-FILTER (?s1!=?s3)
-FILTER (?s1!=?s4)
-FILTER (?s1!=?s5)
-FILTER (?s1!=?s6)
-FILTER (?s2!=?s3)
-FILTER (?s2!=?s4)
-FILTER (?s2!=?s5)
-FILTER (?s3!=?s4)
-FILTER (?s3!=?s5)
+FILTER (?s1!=?s2 && ?s3!=?s4)
 }
 ORDER BY ?l
 LIMIT 100

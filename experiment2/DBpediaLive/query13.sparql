@@ -48,5 +48,5 @@ FILTER (?t4 =  <http://dbpedia.org/class/yago/MonoclonalAntibodies>)
 }
 ORDER BY ?o
 LIMIT 50
-OFFSET 50
+OFFSET 5
 

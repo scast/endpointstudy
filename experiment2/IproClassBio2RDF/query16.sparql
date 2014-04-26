@@ -28,11 +28,6 @@ OPTIONAL
 OPTIONAL
 { ?s4 <http://bio2rdf.org/iproclass_vocabulary:x-taxon> ?xt.}
 FILTER (?s1!=?s2)
-FILTER (?s1!=?s3)
-FILTER (?s1!=?s4)
-FILTER (?s2!=?s3)
-FILTER (?s2!=?s4)
-FILTER (?s3!=?s4)
 }
 ORDER BY ?p
 LIMIT 100

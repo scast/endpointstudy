@@ -20,11 +20,6 @@ select ?d where {
 ?s4 <http://bio2rdf.org/interpro_vocabulary:x-scop> ?xs4.
 ?s4 <http://bio2rdf.org/interpro_vocabulary:x-pubmed> ?xp4.
 FILTER (?s1!=?s2)
-FILTER (?s1!=?s3)
-FILTER (?s1!=?s4)
-FILTER (?s2!=?s3)
-FILTER (?s2!=?s4)
-FILTER (?s3!=?s4)
 OPTIONAL
 {
 ?s1 <http://bio2rdf.org/interpro_vocabulary:example-entry> ?ee5.
@@ -43,12 +38,6 @@ FILTER (?ee5=<http://bio2rdf.org/uniprot:G3V801>)
 FILTER (?ee6=<http://bio2rdf.org/uniprot:P06869>)
 FILTER (?ee7=<http://bio2rdf.org/uniprot:P00734>)
 FILTER (?ee8=<http://bio2rdf.org/uniprot:Q24488>)
-FILTER (?s1!=?s2)
-FILTER (?s1!=?s3)
-FILTER (?s1!=?s4)
-FILTER (?s2!=?s3)
-FILTER (?s2!=?s4)
-FILTER (?s3!=?s4)
 }
 }
 ORDER BY ?d

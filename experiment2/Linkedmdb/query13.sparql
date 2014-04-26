@@ -6,12 +6,12 @@ SELECT ?a WHERE {
 FILTER (?t2!=?t1)
 OPTIONAL {
 ?t1 <http://data.linkedmdb.org/resource/movie/genre> ?o1.
-?o1 <http://data.linkedmdb.org/resource/movie/film_genre_name> "Cult".
+?o1 <http://data.linkedmdb.org/resource/movie/film_genre_name> "Teen".
 ?t1 <http://data.linkedmdb.org/resource/movie/actor> ?a.
 }.
 OPTIONAL {
 ?t2 <http://data.linkedmdb.org/resource/movie/genre> ?o2.
-?o2 <http://data.linkedmdb.org/resource/movie/film_genre_name> "Cult".
+?o2 <http://data.linkedmdb.org/resource/movie/film_genre_name> "Teen".
 ?t2 <http://data.linkedmdb.org/resource/movie/actor> ?a.
 }
 }

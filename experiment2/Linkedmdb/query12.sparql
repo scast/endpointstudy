@@ -2,7 +2,7 @@ SELECT ?m1 ?m2 WHERE {
 ?m1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://data.linkedmdb.org/resource/movie/production_company>.
 ?t1 <http://data.linkedmdb.org/resource/movie/production_company> ?m1.
 ?t1 <http://data.linkedmdb.org/resource/movie/genre> ?o1.
-?o1 <http://data.linkedmdb.org/resource/movie/film_genre_name> "Cult".
+?o1 <http://data.linkedmdb.org/resource/movie/film_genre_name> "Teen".
 ?t2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://data.linkedmdb.org/resource/movie/film>.
 ?t2 <http://data.linkedmdb.org/resource/movie/rating> <http://data.linkedmdb.org/resource/content_rating/11>.
 ?m2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://data.linkedmdb.org/resource/movie/production_company>.

@@ -9,10 +9,9 @@ select distinct * where {
 ?s1 <http://epo.publicdata.eu/ebd/ontology/hasPreviousChange> ?hpc1 .
 OPTIONAL
 {
-?s1 <http://epo.publicdata.eu/ebd/ontology/placeOfApplication> ?ap1.
+?s1 <http://epo.publicdata.eu/ebd/ontology/placeOfApplication> <http://epo.publicdata.eu/ebd/ontology/applicationPlace/09>.
 ?s1 <http://epo.publicdata.eu/ebd/ontology/publishedDate> ?pd1 .
 }
-FILTER (?ap1=<http://epo.publicdata.eu/ebd/ontology/applicationPlace/09> )
 }
 UNION
 {
@@ -25,10 +24,9 @@ UNION
 ?s2 <http://epo.publicdata.eu/ebd/ontology/hasPreviousChange> ?hpc2 .
 OPTIONAL
 {
-?s2 <http://epo.publicdata.eu/ebd/ontology/placeOfApplication> ?ap2  .
+?s2 <http://epo.publicdata.eu/ebd/ontology/placeOfApplication> <http://epo.publicdata.eu/ebd/ontology/applicationPlace/10>  .
 ?s2 <http://epo.publicdata.eu/ebd/ontology/publishedDate> ?pd2 .
 }
-FILTER (?ap2=<http://epo.publicdata.eu/ebd/ontology/applicationPlace/10>)
 }
 UNION
 {
@@ -39,9 +37,8 @@ UNION
 ?s3 <http://epo.publicdata.eu/ebd/ontology/hasApplicationStatus> ?has .
 ?s3 <http://epo.publicdata.eu/ebd/ontology/hasInvolvedCountry> ?hic3 .
 ?s3 <http://epo.publicdata.eu/ebd/ontology/hasPreviousChange> ?hpc3 .
-?s3 <http://epo.publicdata.eu/ebd/ontology/placeOfApplication> ?ap3.
+?s3 <http://epo.publicdata.eu/ebd/ontology/placeOfApplication> <http://epo.publicdata.eu/ebd/ontology/applicationPlace/11>.
 ?s3 <http://epo.publicdata.eu/ebd/ontology/publishedDate> ?pd3 .
-FILTER (?ap3=<http://epo.publicdata.eu/ebd/ontology/applicationPlace/11> )
 }
 UNION
 {

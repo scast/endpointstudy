@@ -7,10 +7,10 @@ select ?xt where {
 ?s2 <http://bio2rdf.org/iproclass_vocabulary:x-genbank> ?g2.
 ?s3 <http://bio2rdf.org/iproclass_vocabulary:x-genbank> ?g3.
 ?s4 <http://bio2rdf.org/iproclass_vocabulary:x-genbank> ?g4.
-?s1 <http://bio2rdf.org/iproclass_vocabulary:x-gi> ?x1.
-?s2 <http://bio2rdf.org/iproclass_vocabulary:x-gi> ?x2.
-?s3 <http://bio2rdf.org/iproclass_vocabulary:x-gi> ?x3.
-?s4 <http://bio2rdf.org/iproclass_vocabulary:x-gi> ?x4.
+?s1 <http://bio2rdf.org/iproclass_vocabulary:x-gi> <http://bio2rdf.org/gi:81941549>.
+?s2 <http://bio2rdf.org/iproclass_vocabulary:x-gi> <http://bio2rdf.org/gi:49237304>.
+?s3 <http://bio2rdf.org/iproclass_vocabulary:x-gi> <http://bio2rdf.org/gi:49237298>.
+?s4 <http://bio2rdf.org/iproclass_vocabulary:x-gi> <http://bio2rdf.org/gi:49237304>.
 ?s1 <http://bio2rdf.org/iproclass_vocabulary:x-geneid> ?gn1.
 ?s2 <http://bio2rdf.org/iproclass_vocabulary:x-geneid> ?gn2.
 ?s3 <http://bio2rdf.org/iproclass_vocabulary:x-geneid> ?gn3.
@@ -26,15 +26,7 @@ select ?xt where {
 OPTIONAL
 {?s1 <http://bio2rdf.org/iproclass_vocabulary:x-pubmed> ?xp.
 }
-FILTER (?x1=<http://bio2rdf.org/gi:81941549>)
-FILTER (?x2=<http://bio2rdf.org/gi:49237304>)
-FILTER (?x3=<http://bio2rdf.org/gi:49237298>)
-FILTER (?x4=<http://bio2rdf.org/gi:49237304> )
 FILTER (?s1!=?s2)
-FILTER (?s1!=?s3)
-FILTER (?s1!=?s4)
-FILTER (?s2!=?s3)
-FILTER (?s2!=?s4)
 FILTER (?s3!=?s4)
 }
 ORDER BY ?xt

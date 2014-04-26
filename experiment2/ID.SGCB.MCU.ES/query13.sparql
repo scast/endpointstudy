@@ -24,7 +24,6 @@ UNION
 ?s4 <http://purl.org/dc/terms/modified> ?m4.
 ?s3 <http://www.w3.org/2004/02/skos/core#broader> ?cb3.
 ?s4 <http://www.w3.org/2004/02/skos/core#broader> ?cb4.
-FILTER (?s3!=?s4)
 }
 }
 ORDER BY ?l

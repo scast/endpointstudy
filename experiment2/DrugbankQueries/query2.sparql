@@ -1,6 +1,6 @@
 SELECT DISTINCT *  WHERE {
    ?drug3 <http://wifo5-04.informatik.uni-mannheim.de/drugbank/resource/drugbank/drugCategory> ?dc3.
-   ?drug4 <http://wifo5-04.informatik.uni-mannheim.de/drugbank/resource/drugbank/drugCategory> .
+   ?drug4 <http://wifo5-04.informatik.uni-mannheim.de/drugbank/resource/drugbank/drugCategory> ?dc4.
    ?I3 <http://wifo5-04.informatik.uni-mannheim.de/drugbank/resource/drugbank/interactionDrug2> ?drug3 .
    ?I3 <http://wifo5-04.informatik.uni-mannheim.de/drugbank/resource/drugbank/interactionDrug1> ?drug .
    ?I4 <http://wifo5-04.informatik.uni-mannheim.de/drugbank/resource/drugbank/interactionDrug2> ?drug4 .

@@ -22,20 +22,6 @@ WHERE {
 ?geneid6 <http://bio2rdf.org/ns/bio2rdf:xTaxonomy> ?t .
 ?geneid6  <http://www.w3.org/2004/02/skos/core#notation> "100008587" .
 FILTER (?geneid1!=?geneid2)
-FILTER (?geneid1!=?geneid3)
-FILTER (?geneid1!=?geneid4)
-FILTER (?geneid1!=?geneid5)
-FILTER (?geneid1!=?geneid6)
-FILTER (?geneid2!=?geneid3)
-FILTER (?geneid2!=?geneid4)
-FILTER (?geneid2!=?geneid5)
-FILTER (?geneid2!=?geneid6)
-FILTER (?geneid3!=?geneid4)
-FILTER (?geneid3!=?geneid5)
-FILTER (?geneid3!=?geneid6)
-FILTER (?geneid4!=?geneid5)
-FILTER (?geneid4!=?geneid6)
-FILTER (?geneid5!=?geneid6)
 }
 UNION
 {
@@ -58,20 +44,6 @@ UNION
 ?geneid12 <http://bio2rdf.org/ns/bio2rdf:symbol> ?s12 .    
 ?geneid12 <http://bio2rdf.org/ns/uniprot:xProtein> <http://purl.uniprot.org/uniprot/D3Z4R7> .
 FILTER (?geneid7!=?geneid8)
-FILTER (?geneid7!=?geneid9)
-FILTER (?geneid7!=?geneid10)
-FILTER (?geneid7!=?geneid11)
-FILTER (?geneid7!=?geneid12)
-FILTER (?geneid8!=?geneid9)
-FILTER (?geneid8!=?geneid10)
-FILTER (?geneid8!=?geneid11)
-FILTER (?geneid8!=?geneid12)
-FILTER (?geneid9!=?geneid10)
-FILTER (?geneid9!=?geneid11)
-FILTER (?geneid9!=?geneid12)
-FILTER (?geneid10!=?geneid11)
-FILTER (?geneid10!=?geneid12)
-FILTER (?geneid11!=?geneid12)
 }
 }
 ORDER BY ?t

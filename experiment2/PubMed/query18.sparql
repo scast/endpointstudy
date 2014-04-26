@@ -14,7 +14,6 @@ where {
 ?s2 <http://purl.org/dc/terms/title> ?t2.
 ?s2 <http://bio2rdf.org/pubmed_vocabulary:publication_model> ?pm2.
 ?s2 <http://bio2rdf.org/pubmed_vocabulary:suppl_mesh_heading> ?mh2.
-FILTER (?s1 != ?s2)
-FILTER (?pm1 = ?pm2)
+FILTER (?pm1 != ?pm2)
 }
 ORDER BY ?pm

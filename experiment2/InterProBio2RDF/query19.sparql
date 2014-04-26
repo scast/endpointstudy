@@ -13,7 +13,6 @@ select ?d where {
 ?s2 <http://bio2rdf.org/interpro_vocabulary:x-pubmed> ?xp2.
 ?s2 <http://bio2rdf.org/interpro_vocabulary:found-in> ?fin2.
 ?s2 <http://bio2rdf.org/interpro_vocabulary:x-pdb> ?xpdb2.
-FILTER (?s1!=?s2)
 }
 UNION
 {

@@ -28,8 +28,6 @@ select distinct ?has where {
 ?s3 <http://epo.publicdata.eu/ebd/ontology/placeOfApplication> <http://epo.publicdata.eu/ebd/ontology/applicationPlace/11> .
 ?s3 <http://epo.publicdata.eu/ebd/ontology/publishedDate> ?pd3 .
 FILTER(?s1!=?s2)
-FILTER(?s1!=?s3)
-FILTER(?s2!=?s3)
 }
 UNION
 {
@@ -61,8 +59,6 @@ UNION
 ?s6 <http://epo.publicdata.eu/ebd/ontology/placeOfApplication> <http://epo.publicdata.eu/ebd/ontology/applicationPlace/14>  .
 ?s6 <http://epo.publicdata.eu/ebd/ontology/publishedDate> ?pd6 .
 FILTER(?s4!=?s5)
-FILTER(?s4!=?s6)
-FILTER(?s5!=?s6)
 }
 }
 ORDER BY ?has
