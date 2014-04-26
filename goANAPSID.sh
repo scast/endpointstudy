@@ -43,7 +43,7 @@ do
             -d SSGM
             -a True
             -w True
-            -t V)
+            -t O)
         2>> $ERRORS_FILE
         >> $RESULTS_FILE;
     done
