@@ -6,13 +6,13 @@ RESULTS_FILE=$EXPERIMENTS_ROOT/anapsid-results-$(date +"%Y%m%d-%k:%M:%S")
 ERRORS_FILE=$EXPERIMENTS_ROOT/anapsid-errors-$(date +"%Y%m%d-%k:%M:%S")
 CMD_FILE=$ROOT/bin/runAnapsid.py
 echo $RESULTS_FILE;
-for endpoint in $(ls $QUERY_ROOT/)
+for endpoint in $(ls $QUERY_ROOT/virtuoso)
 do
     echo $endpoint >> $RESULTS_FILE
-    for query in $(ls $QUERY_ROOT/$endpoint/virtuoso/*.sparql)
+    for query in $(ls $QUERY_ROOT/virtuoso/$endpoint/*.sparql)
     do
 	(timeout -s 12 100 python $CMD_FILE
-            -e $QUERY_ROOT/$endpoint/endpoint.anapsid
+            -e $QUERY_ROOT/virtuoso/$endpoint/endpoint.anapsid
             -q $query
             -p b
             -s False
@@ -25,10 +25,15 @@ do
         2>> $ERRORS_FILE
         >> $RESULTS_FILE;
     done
-    for query in $(ls $QUERY_ROOT/$endpoint/owlim/*.sparql)
+done
+
+for endpoint in $(ls $QUERY_ROOT/owlim)
+do
+    echo $endpoint >> $RESULTS_FILE
+    for query in $(ls $QUERY_ROOT/owlim/$endpoint/*.sparql)
     do
 	(timeout -s 12 100 python $CMD_FILE
-            -e $QUERY_ROOT/$endpoint/endpoint.anapsid
+            -e $QUERY_ROOT/owlim/$endpoint/endpoint.anapsid
             -q $query
             -p b
             -s False
@@ -37,9 +42,8 @@ do
             -d SSGM
             -a True
             -w True
-            -t O)
+            -t V)
         2>> $ERRORS_FILE
         >> $RESULTS_FILE;
     done
-
 done
