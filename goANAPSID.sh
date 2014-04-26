@@ -11,6 +11,6 @@ do
     echo $endpoint >> $RESULTS_FILE
     for query in $(ls $QUERY_ROOT/$endpoint/*.sparql)
     do
-	(timeout -s 12 300 python $CMD_FILE -e $QUERY_ROOT/$endpoint/endpoint.anapsid -q $query -p b -s False -b 16384 -o False -d SSGM -a True -w True) 2>> $ERRORS_FILE >> $RESULTS_FILE;
+	(timeout -s 12 100 python $CMD_FILE -e $QUERY_ROOT/$endpoint/endpoint.anapsid -q $query -p b -s False -b 16384 -o False -d SSGM -a True -w True) 2>> $ERRORS_FILE >> $RESULTS_FILE;
     done
 done

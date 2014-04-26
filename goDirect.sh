@@ -12,6 +12,6 @@ do
     echo $endpoint >> $RESULTS_FILE
     for query in $(ls $QUERY_ROOT/$endpoint/*.sparql)
     do
-      	(python $CMD_FILE $query $QUERY_ROOT/$endpoint/endpoint.arq --timeout 300) 2>> $ERRORS_FILE >> $RESULTS_FILE
+      	(python $CMD_FILE $query $QUERY_ROOT/$endpoint/endpoint.arq --timeout 100) 2>> $ERRORS_FILE >> $RESULTS_FILE
     done
 done

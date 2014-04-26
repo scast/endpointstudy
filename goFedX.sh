@@ -13,6 +13,6 @@ do
     for query in $(ls $QUERY_ROOT/$endpoint/*.sparql)
     do
     	# echo $query
-    	(python $CMD_FILE $query $QUERY_ROOT/$endpoint/endpoint.fedx $FEDX_ROOT) 2>> $ERRORS_FILE >> $RESULTS_FILE
+    	(python $CMD_FILE --timeout 100 $query $QUERY_ROOT/$endpoint/endpoint.fedx $FEDX_ROOT) 2>> $ERRORS_FILE >> $RESULTS_FILE
     done
 done
