@@ -9,7 +9,7 @@ echo $RESULTS_FILE;
 for endpoint in $(ls $QUERY_ROOT/)
 do
     echo $endpoint >> $RESULTS_FILE
-    for query in $(ls $QUERY_ROOT/$endpoint/*.sparql)
+    for query in $(ls $QUERY_ROOT/$endpoint/virtuoso/*.sparql)
     do
 	(timeout -s 12 100 python $CMD_FILE
             -e $QUERY_ROOT/$endpoint/endpoint.anapsid
@@ -20,8 +20,26 @@ do
             -o False
             -d SSGM
             -a True
-            -w True)
+            -w True
+            -t V)
         2>> $ERRORS_FILE
         >> $RESULTS_FILE;
     done
+    for query in $(ls $QUERY_ROOT/$endpoint/owlim/*.sparql)
+    do
+	(timeout -s 12 100 python $CMD_FILE
+            -e $QUERY_ROOT/$endpoint/endpoint.anapsid
+            -q $query
+            -p b
+            -s False
+            -b 16384
+            -o False
+            -d SSGM
+            -a True
+            -w True
+            -t O)
+        2>> $ERRORS_FILE
+        >> $RESULTS_FILE;
+    done
+
 done
